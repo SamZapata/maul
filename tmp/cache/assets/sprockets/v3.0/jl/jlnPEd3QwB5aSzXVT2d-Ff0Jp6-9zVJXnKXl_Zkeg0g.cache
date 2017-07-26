@@ -1,0 +1,40 @@
+{:uriI"„file://app/assets/morris.js-0.4.3/spec/specs.html?type=text/html&id=ca3f5a01b1473db6130d8df52301d15c3ea3b78499163cf2edd89b6aee35c6a1:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"/app/assets/morris.js-0.4.3/spec/specs.html;T:	nameI"spec/specs;T:logical_pathI"spec/specs.html;T:content_typeI"text/html;T:sourceI"«<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>morris.js tests</title>
+  <link rel="stylesheet" href="vendor/mocha-1.6.0.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../morris.css" type="text/css" media="screen" />
+  <script src="vendor/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="vendor/raphael-2.1.0.min.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script type="text/javascript" src="vendor/mocha-1.6.0.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <script type="text/javascript" src="vendor/chai-1.3.0.js"></script>
+  <script type="text/javascript" src="vendor/chai-jquery-1.1.0.js"></script>
+  <script type="text/javascript" src="vendor/sinon-1.5.0.js"></script>
+  <script type="text/javascript" src="vendor/sinon-chai-2.1.2.js"></script>
+  <script>
+    should = chai.should();
+  </script>
+
+  <script type="text/javascript" src="../morris.js"></script>
+  <script type="text/javascript" src="../build/spec.js"></script>
+  <div id="test" style="width: 400px; height: 200px;"></div>
+  <script>
+    if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+      mocha.run();
+    }
+  </script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"=file-digest://app/assets/morris.js-0.4.3/spec/specs.html;TTF:charsetI"
+utf-8;F:digest"%¯-éPä©\¹¬Í€i½ÌÊ^NØÖ%ÄINtKO)ã:lengthi«:dependencies_digest"%ýX‚˜~”pXd~©sM²Å¿ý®g¬0'eô~ _Üàæ:idI"Eca3f5a01b1473db6130d8df52301d15c3ea3b78499163cf2edd89b6aee35c6a1;F:
+mtimel+b„X

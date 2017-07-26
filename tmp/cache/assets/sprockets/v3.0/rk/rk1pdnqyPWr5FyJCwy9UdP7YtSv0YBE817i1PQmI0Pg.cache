@@ -1,0 +1,42 @@
+{:uriI"ãfile://app/assets/morris.js-0.4.3/examples/non-date.html?type=text/html&id=e4263076b5c368231ac8f4847f9b27edadd59339ad098c0449e43ef7b9f41bf0:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"6app/assets/morris.js-0.4.3/examples/non-date.html;T:	nameI"examples/non-date;T:logical_pathI"examples/non-date.html;T:content_typeI"text/html;T:sourceI"}<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Formatting Non-date Arbitrary X-axis</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+var day_data = [
+  {"elapsed": "I", "value": 34},
+  {"elapsed": "II", "value": 24},
+  {"elapsed": "III", "value": 3},
+  {"elapsed": "IV", "value": 12},
+  {"elapsed": "V", "value": 13},
+  {"elapsed": "VI", "value": 22},
+  {"elapsed": "VII", "value": 5},
+  {"elapsed": "VIII", "value": 26},
+  {"elapsed": "IX", "value": 12},
+  {"elapsed": "X", "value": 19}
+];
+Morris.Line({
+  element: 'graph',
+  data: day_data,
+  xkey: 'elapsed',
+  ykeys: ['value'],
+  labels: ['value'],
+  parseTime: false
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Dfile-digest://app/assets/morris.js-0.4.3/examples/non-date.html;TTF:charsetI"
+utf-8;F:digest"%=…mVÜXHûJÇ ë}_ÀjTõΩ¨´¨8÷,(mÆD:lengthi}:dependencies_digest"%)ÓVu`è—óU.It6‡ﬂ§ËT¬òﬂ+q™¢¶1û:idI"Ee4263076b5c368231ac8f4847f9b27edadd59339ad098c0449e43ef7b9f41bf0;F:
+mtimel+bÑX

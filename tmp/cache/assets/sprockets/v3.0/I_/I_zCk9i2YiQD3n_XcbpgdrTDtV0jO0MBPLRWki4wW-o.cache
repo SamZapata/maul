@@ -1,0 +1,42 @@
+{:uriI"áfile://app/assets/morris.js-0.4.3/examples/days.html?type=text/html&id=f27a59bc457dde5a70d769f0e56be1e79ea5385b0409b1a829c121d1f4fb696b:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"2app/assets/morris.js-0.4.3/examples/days.html;T:	nameI"examples/days;T:logical_pathI"examples/days.html;T:content_typeI"text/html;T:sourceI"Œ<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Formatting Dates YYYY-MM-DD</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+/* data stolen from http://howmanyleft.co.uk/vehicle/jaguar_'e'_type */
+var day_data = [
+  {"period": "2012-10-01", "licensed": 3407, "sorned": 660},
+  {"period": "2012-09-30", "licensed": 3351, "sorned": 629},
+  {"period": "2012-09-29", "licensed": 3269, "sorned": 618},
+  {"period": "2012-09-20", "licensed": 3246, "sorned": 661},
+  {"period": "2012-09-19", "licensed": 3257, "sorned": 667},
+  {"period": "2012-09-18", "licensed": 3248, "sorned": 627},
+  {"period": "2012-09-17", "licensed": 3171, "sorned": 660},
+  {"period": "2012-09-16", "licensed": 3171, "sorned": 676},
+  {"period": "2012-09-15", "licensed": 3201, "sorned": 656},
+  {"period": "2012-09-10", "licensed": 3215, "sorned": 622}
+];
+Morris.Line({
+  element: 'graph',
+  data: day_data,
+  xkey: 'period',
+  ykeys: ['licensed', 'sorned'],
+  labels: ['Licensed', 'SORN']
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"@file-digest://app/assets/morris.js-0.4.3/examples/days.html;TTF:charsetI"
+utf-8;F:digest"%0:E–CerûZv»87Y9e‘÷aÍÀ˝•Ç‰Sı∏Å:lengthiŒ:dependencies_digest"%≠Û∫tåPmÑ=—¯'–ñ ˚æ¢D‘qÇm’É∂Ö·ÇÄ˙:idI"Ef27a59bc457dde5a70d769f0e56be1e79ea5385b0409b1a829c121d1f4fb696b;F:
+mtimel+bÑX

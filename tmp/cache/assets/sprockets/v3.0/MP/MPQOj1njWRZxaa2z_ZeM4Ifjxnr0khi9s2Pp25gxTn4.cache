@@ -1,0 +1,45 @@
+{:uriI"Çfile://app/assets/chart-master/samples/pie.html?type=text/html&id=3085328d4dd89840950b7312ac0550f8627e73b1402cdfb8512f8736fd1fb4ad:ET:load_pathI"app/assets/chart-master;T:filenameI"-app/assets/chart-master/samples/pie.html;T:	nameI"samples/pie;T:logical_pathI"samples/pie.html;T:content_typeI"text/html;T:sourceI"[<!doctype html>
+<html>
+	<head>
+		<title>Radar Chart</title>
+		<script src="../Chart.js"></script>
+		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+		<style>
+			canvas{
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" height="450" width="450"></canvas>
+
+
+	<script>
+
+		var pieData = [
+				{
+					value: 30,
+					color:"#F38630"
+				},
+				{
+					value : 50,
+					color : "#E0E4CC"
+				},
+				{
+					value : 100,
+					color : "#69D2E7"
+				}
+			
+			];
+
+	var myPie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData);
+	
+	</script>
+	</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI";file-digest://app/assets/chart-master/samples/pie.html;TTF:charsetI"
+utf-8;F:digest"%øùÃê
+˝V^ø9P„Wy:|öã⁄\.‹º…<ëÔ¡;b':lengthi[:dependencies_digest"%∑7á£ÕEÆÛûﬂBn¸$L˛7Êö∏∂ûúmÂ≈
+£N:idI"E3085328d4dd89840950b7312ac0550f8627e73b1402cdfb8512f8736fd1fb4ad;F:
+mtimel+bÑX

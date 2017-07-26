@@ -1,0 +1,43 @@
+{:uriI"“file://app/assets/morris.js-0.4.3/examples/months-no-smooth.html?type=text/html&id=90d60b35842cdac6285d8b6c29b6f3adc173385dcce6b8c980b87a06bc58be3b:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI">app/assets/morris.js-0.4.3/examples/months-no-smooth.html;T:	nameI"examples/months-no-smooth;T:logical_pathI"#examples/months-no-smooth.html;T:content_typeI"text/html;T:sourceI"Ç<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Formatting Dates with YYYY-MM</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+/* data stolen from http://howmanyleft.co.uk/vehicle/jaguar_'e'_type */
+var month_data = [
+  {"period": "2012-10", "licensed": 3407, "sorned": 660},
+  {"period": "2011-08", "licensed": 3351, "sorned": 629},
+  {"period": "2011-03", "licensed": 3269, "sorned": 618},
+  {"period": "2010-08", "licensed": 3246, "sorned": 661},
+  {"period": "2010-05", "licensed": 3257, "sorned": 667},
+  {"period": "2010-03", "licensed": 3248, "sorned": 627},
+  {"period": "2010-01", "licensed": 3171, "sorned": 660},
+  {"period": "2009-12", "licensed": 3171, "sorned": 676},
+  {"period": "2009-10", "licensed": 3201, "sorned": 656},
+  {"period": "2009-09", "licensed": 3215, "sorned": 622}
+];
+Morris.Line({
+  element: 'graph',
+  data: month_data,
+  xkey: 'period',
+  ykeys: ['licensed', 'sorned'],
+  labels: ['Licensed', 'SORN'],
+  smooth: false
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Lfile-digest://app/assets/morris.js-0.4.3/examples/months-no-smooth.html;TTF:charsetI"
+utf-8;F:digest"%g“ù–Ž^¾œ4ç}†\Ì2jñgýò¨7S¡sr—ë×:lengthiÇ:dependencies_digest"%“C2£¥x|ï’~‡ÃTÄ.¹taFtú™{>òÎ—4b:idI"E90d60b35842cdac6285d8b6c29b6f3adc173385dcce6b8c980b87a06bc58be3b;F:
+mtimel+b„X

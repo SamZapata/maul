@@ -1,0 +1,22 @@
+{:uriI"’file://app/assets/jquery-file-upload/server/gae-python/app.yaml?type=text/yaml&id=2456cacc2bd611810bad0ed76eeb6ccb7b3f32879a0d8e90d81bcb98ce619bb5:ET:load_pathI""app/assets/jquery-file-upload;T:filenameI"=app/assets/jquery-file-upload/server/gae-python/app.yaml;T:	nameI"server/gae-python/app;T:logical_pathI"server/gae-python/app.yml;T:content_typeI"text/yaml;T:sourceI"application: jquery-file-upload
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+builtins:
+- deferred: on
+
+handlers:
+- url: /(favicon\.ico|robots\.txt)
+  static_files: static/\1
+  upload: static/(.*)
+  expiration: '1d'
+- url: /.*
+  script: main.app
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/yaml&file_type=text/yaml;TTI"Kfile-digest://app/assets/jquery-file-upload/server/gae-python/app.yaml;TTF:charsetI"
+utf-8;F:digest"%[X;÷ã@ÜüU6»³Uu7sâz)œlh°ÅŠ
+à‘G–Ó:lengthi:dependencies_digest"%–6|¡ÄìáÅò“—=×­RÊe2æV(„*YÕ•ø¨Ô,:idI"E2456cacc2bd611810bad0ed76eeb6ccb7b3f32879a0d8e90d81bcb98ce619bb5;F:
+mtimel+b„X

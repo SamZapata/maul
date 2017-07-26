@@ -1,0 +1,17 @@
+{:uriI"file://app/assets/jquery-file-upload/server/gae-go/app.yaml?type=text/yaml&id=ccdfddf5904b7472493e994a728844c409b2987357b88aa8429d117596de0d1b:ET:load_pathI""app/assets/jquery-file-upload;T:filenameI"9app/assets/jquery-file-upload/server/gae-go/app.yaml;T:	nameI"server/gae-go/app;T:logical_pathI"server/gae-go/app.yml;T:content_typeI"text/yaml;T:sourceI"Öapplication: jquery-file-upload
+version: 2
+runtime: go
+api_version: go1
+
+handlers:
+- url: /(favicon\.ico|robots\.txt)
+  static_files: static/\1
+  upload: static/(.*)
+  expiration: '1d'
+- url: /.*
+  script: _go_app
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/yaml&file_type=text/yaml;TTI"Gfile-digest://app/assets/jquery-file-upload/server/gae-go/app.yaml;TTF:charsetI"
+utf-8;F:digest"%ŒúôefÃG'›öåìNY©¦“1VƒÙ*³äb‘õ:lengthiÖ:dependencies_digest"%TnXjOŞ˜ŸÕH¤†32	$æ[Ì½E˜K_«isjø:idI"Eccdfddf5904b7472493e994a728844c409b2987357b88aa8429d117596de0d1b;F:
+mtimel+b„X

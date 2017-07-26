@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Maul Project</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Implementación de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css.scss">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/login-style.css">
+
+    <!--
+    <%= csrf_meta_tags %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all' %>     
+    <!-- , 'data-turbolinks-track': 'reload'
+
+    <%= javascript_include_tag 'application' %>
+    <!-- , 'data-turbolinks-track': 'reload' -->
+</head>
+
+  <body>
+
+    <!-- Menú Barra superior -->    
+    <nav class="navbar navbar-inverse navbar-static-top navbar-fixed" role="navigation">      
+      <div class="container">        
+          <div class="navbar-header">          
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Maul</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+            <a class="navbar-brand" href="/home/index.html">
+              <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>70, :height=>40 %>
+            </a>
+          </div>          
+
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">Comunidades</a>
+              </li>
+              <li>
+                <a href="#">Sitios</a>
+              </li>
+              <li>
+                <a href="#">Eventos</a>
+              </li>
+
+              <% if user_signed_in? %>
+                    <li class="dropdown">                                         
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/users/edit"> <%=current_user.first_name%> <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="#"><%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link' %></a>
+                            </li>
+                            <li>
+                              <a href="#"><%= link_to "Salir", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a>
+                            </li>
+                        </ul>
+                    </li>
+                <%else%>
+                    <li>
+                        <a href= "/users/sign_up"> Registrarse </a>
+                    </li>                            
+                    <li>  
+                        <a href= "/users/sign_in"> Iniciar Sesión </a>
+                    </li>
+              <% end %> 
+            </ul>
+          </div>        
+      </div>
+    </nav>    
+    <!-- FIN BARRA DE MENU PRINCIPAL -->
+  
+  <section id="bg-map">
+    <h2 class="page-header" align="center">Iniciar Sesión</h2>    
+    <div class="col-md-12">
+    <div class="bg-map-cali">
+      <div class="row" align="center"> 
+        <div class="form">
+      <!--<form class="login-form">-->
+      
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        
+        <div class="field" align="center">          
+          <!--<%= f.label :Correo %><br />-->
+          <%= f.email_field :email, placeholder:'email', autofocus: true %>
+        </div>
+
+        <div class="field" align="center">          
+          <%= f.password_field :password, placeholder:'contraseña', autocomplete: "off" %>
+        </div>
+
+        <!--
+        <% if devise_mapping.rememberable? -%>
+          <div class="field" align="center">
+            <%= f.label :remember_me %>
+            <%= f.check_box :remember_me %>            
+          </div>
+        <% end -%>
+        -->
+        <div class="actions" align="center">
+          <button>
+            <%= f.submit "Entrar" %>
+          </button>
+        </div>
+
+        <div align="center">
+          <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+          <%= link_to "¿olvido su contraseña?", new_password_path(resource_name) %><br />
+          <% end -%>
+        </div>
+            
+        <% end %>
+
+        <div align="center">
+          <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+          <%= link_to "Registrarse", new_registration_path(resource_name) %><br />
+          <% end -%>
+        </div>
+    <!--</form>-->  
+    </div>
+      
+    <!-- Fin form inciar sesion -->
+
+    </div>
+    </div>
+    </div>
+  </section>  
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{:uriI"Üfile://app/assets/morris.js-0.4.3/examples/bar.html?type=text/html&id=e592025d9df9fdd066dbb96a14a7572109e8775cdfd4ab56188b85a143628a12:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"1app/assets/morris.js-0.4.3/examples/bar.html;T:	nameI"examples/bar;T:logical_pathI"examples/bar.html;T:content_typeI"text/html;T:sourceI"œ<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Bar charts</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+// Use Morris.Bar
+Morris.Bar({
+  element: 'graph',
+  data: [
+    {x: '2011 Q1', y: 3, z: 2, a: 3},
+    {x: '2011 Q2', y: 2, z: null, a: 1},
+    {x: '2011 Q3', y: 0, z: 2, a: 4},
+    {x: '2011 Q4', y: 2, z: 4, a: 3}
+  ],
+  xkey: 'x',
+  ykeys: ['y', 'z', 'a'],
+  labels: ['Y', 'Z', 'A']
+}).on('click', function(i, row){
+  console.log(i, row);
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"?file-digest://app/assets/morris.js-0.4.3/examples/bar.html;TTF:charsetI"
+utf-8;F:digest"%˙}!6Ê4{Ø‚6a‹∆z”≠5›-Áæ°Œbx¯ÛK‰:lengthiœ:dependencies_digest"%Pû@G®Æ≥˝C(ê[g+Â˘≠πQAä∂ôƒ„ª"—1:idI"Ee592025d9df9fdd066dbb96a14a7572109e8775cdfd4ab56188b85a143628a12;F:
+mtimel+bÑX

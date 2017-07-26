@@ -1,0 +1,49 @@
+{:uriI"çfile://app/assets/morris.js-0.4.3/examples/bar-colors.html?type=text/html&id=84cacd45589926d08304f8985a3165d82af4b78c242f1fdeff948f71a89d9bfc:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"8app/assets/morris.js-0.4.3/examples/bar-colors.html;T:	nameI"examples/bar-colors;T:logical_pathI"examples/bar-colors.html;T:content_typeI"text/html;T:sourceI"¢<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Bar charts</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+// Use Morris.Bar
+Morris.Bar({
+  element: 'graph',
+  data: [
+    {x: '2011 Q1', y: 0},
+    {x: '2011 Q2', y: 1},
+    {x: '2011 Q3', y: 2},
+    {x: '2011 Q4', y: 3},
+    {x: '2012 Q1', y: 4},
+    {x: '2012 Q2', y: 5},
+    {x: '2012 Q3', y: 6},
+    {x: '2012 Q4', y: 7},
+    {x: '2013 Q1', y: 8}
+  ],
+  xkey: 'x',
+  ykeys: ['y'],
+  labels: ['Y'],
+  barColors: function (row, series, type) {
+    if (type === 'bar') {
+      var red = Math.ceil(255 * row.y / this.ymax);
+      return 'rgb(' + red + ',0,0)';
+    }
+    else {
+      return '#000';
+    }
+  }
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://app/assets/morris.js-0.4.3/examples/bar-colors.html;TTF:charsetI"
+utf-8;F:digest"%D∆≤˚ÁΩ‡rV™âJ˙Ü¨Ác	Ïßì0∞åŒjô%M‡:lengthi¢:dependencies_digest"%ˇ:9”›éâÛÿ3k†ÀgZj‚√ºãîÎ1È!:idI"E84cacd45589926d08304f8985a3165d82af4b78c242f1fdeff948f71a89d9bfc;F:
+mtimel+bÑX

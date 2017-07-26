@@ -1,0 +1,37 @@
+{:uriI"file://app/assets/morris.js-0.4.3/examples/area-as-line.html?type=text/html&id=810843d066800f3322ce778166cebf7bae32fc658aab12d316a1a9886e6cdfa0:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI":app/assets/morris.js-0.4.3/examples/area-as-line.html;T:	nameI"examples/area-as-line;T:logical_pathI"examples/area-as-line.html;T:content_typeI"text/html;T:sourceI"¾<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Area charts behaving like line charts</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+// Use Morris.Area instead of Morris.Line
+Morris.Area({
+  element: 'graph',
+  behaveLikeLine: true,
+  data: [
+    {x: '2011 Q1', y: 3, z: 3},
+    {x: '2011 Q2', y: 2, z: 1},
+    {x: '2011 Q3', y: 2, z: 4},
+    {x: '2011 Q4', y: 3, z: 3}
+  ],
+  xkey: 'x',
+  ykeys: ['y', 'z'],
+  labels: ['Y', 'Z']
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/morris.js-0.4.3/examples/area-as-line.html;TTF:charsetI"
+utf-8;F:digest"%Dƒ,K’²ÒOÈ,ØÚ\1ÆR¦rŠèD4ŸRir:lengthi¾:dependencies_digest"%ËS'í·PËæp	¤aj"0ü“Z¾ˆ
+ÃU,%ê†õ:idI"E810843d066800f3322ce778166cebf7bae32fc658aab12d316a1a9886e6cdfa0;F:
+mtimel+b„X

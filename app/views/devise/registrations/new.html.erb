@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Maul Project</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Implementación de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css.scss">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/login-style.css">
+
+    <!--
+    <%= csrf_meta_tags %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all' %>     
+    <!-- , 'data-turbolinks-track': 'reload'
+
+    <%= javascript_include_tag 'application' %>
+    <!-- , 'data-turbolinks-track': 'reload' -->
+</head>
+
+  <body>
+
+    <!-- Menú Barra superior -->    
+    <nav class="navbar navbar-inverse navbar-static-top navbar-fixed" role="navigation">      
+      <div class="container">        
+          <div class="navbar-header">          
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Maul</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+            <a class="navbar-brand" href="/home/index.html">
+              <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>70, :height=>40 %>
+            </a>
+          </div>          
+
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">Comunidades</a>
+              </li>
+              <li>
+                <a href="#">Sitios</a>
+              </li>
+              <li>
+                <a href="#">Eventos</a>
+              </li>
+
+              <% if user_signed_in? %>
+                    <li class="dropdown">                                         
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/users/edit"> <%=current_user.first_name%> <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                              <a href="#"><%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link' %></a>
+                            </li>
+                            <li>
+                              <a href="#"><%= link_to "Salir", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a>
+                            </li>
+                        </ul>
+                    </li>
+                <%else%>
+                    <li>
+                        <a href= "/users/sign_up"> Registrarse </a>
+                    </li>                            
+                    <li>  
+                        <a href= "/users/sign_in"> Iniciar Sesión </a>
+                    </li>
+              <% end %> 
+            </ul>
+          </div>        
+      </div>
+    </nav>    
+    <!-- FIN BARRA DE MENU PRINCIPAL -->
+
+  <section id="registro">
+
+    <h2 class="page-header" align="center">Registrarse</h2>
+    <div class="row" align="center">
+    
+    <div class="form">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">        
+        <%= f.email_field :email, placeholder:'email', autofocus: true %>
+      </div>
+
+      <div class="field">        
+        <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, placeholder:'password', autocomplete: "off" %>
+      </div>
+
+      <div class="field">        
+        <%= f.password_field :password_confirmation, placeholder:'confirmar password', autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <button><%= f.submit "Sign up" %></button>
+      </div>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+    
+    </div>
+    </div>
+  </section>
+
+</body>
+</html>

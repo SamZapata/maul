@@ -1,0 +1,63 @@
+{:uriI"âfile://app/assets/morris.js-0.4.3/examples/events.html?type=text/html&id=369df752f0fb3d20436f3499c8a3621a881ac196d13244f9a24a2a132fd3338e:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"4app/assets/morris.js-0.4.3/examples/events.html;T:	nameI"examples/events;T:logical_pathI"examples/events.html;T:content_typeI"text/html;T:sourceI"ä	<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Time Events</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+var week_data = [
+  {"period": "2011 W27", "licensed": 3407, "sorned": 660},
+  {"period": "2011 W26", "licensed": 3351, "sorned": 629},
+  {"period": "2011 W25", "licensed": 3269, "sorned": 618},
+  {"period": "2011 W24", "licensed": 3246, "sorned": 661},
+  {"period": "2011 W23", "licensed": 3257, "sorned": 667},
+  {"period": "2011 W22", "licensed": 3248, "sorned": 627},
+  {"period": "2011 W21", "licensed": 3171, "sorned": 660},
+  {"period": "2011 W20", "licensed": 3171, "sorned": 676},
+  {"period": "2011 W19", "licensed": 3201, "sorned": 656},
+  {"period": "2011 W18", "licensed": 3215, "sorned": 622},
+  {"period": "2011 W17", "licensed": 3148, "sorned": 632},
+  {"period": "2011 W16", "licensed": 3155, "sorned": 681},
+  {"period": "2011 W15", "licensed": 3190, "sorned": 667},
+  {"period": "2011 W14", "licensed": 3226, "sorned": 620},
+  {"period": "2011 W13", "licensed": 3245, "sorned": null},
+  {"period": "2011 W12", "licensed": 3289, "sorned": null},
+  {"period": "2011 W11", "licensed": 3263, "sorned": null},
+  {"period": "2011 W10", "licensed": 3189, "sorned": null},
+  {"period": "2011 W09", "licensed": 3079, "sorned": null},
+  {"period": "2011 W08", "licensed": 3085, "sorned": null},
+  {"period": "2011 W07", "licensed": 3055, "sorned": null},
+  {"period": "2011 W06", "licensed": 3063, "sorned": null},
+  {"period": "2011 W05", "licensed": 2943, "sorned": null},
+  {"period": "2011 W04", "licensed": 2806, "sorned": null},
+  {"period": "2011 W03", "licensed": 2674, "sorned": null},
+  {"period": "2011 W02", "licensed": 1702, "sorned": null},
+  {"period": "2011 W01", "licensed": 1732, "sorned": null}
+];
+Morris.Line({
+  element: 'graph',
+  data: week_data,
+  xkey: 'period',
+  ykeys: ['licensed', 'sorned'],
+  labels: ['Licensed', 'SORN'],
+  events: [
+    '2011-04',
+    '2011-08'
+  ]
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Bfile-digest://app/assets/morris.js-0.4.3/examples/events.html;TTF:charsetI"
+utf-8;F:digest"%Gøe”ëª?·∫∂î”è-tüi%ö¶µ›˛:—
+?ôàx:lengthiä	:dependencies_digest"%üw+Â0·ˆßÿjs†Ì∂:7Ùt√˙Kõ`cÒ”:idI"E369df752f0fb3d20436f3499c8a3621a881ac196d13244f9a24a2a132fd3338e;F:
+mtimel+bÑX

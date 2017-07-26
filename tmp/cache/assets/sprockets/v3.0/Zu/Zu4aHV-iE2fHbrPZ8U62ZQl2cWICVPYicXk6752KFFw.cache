@@ -1,0 +1,42 @@
+{:uriI"ˆfile://app/assets/morris.js-0.4.3/examples/years.html?type=text/html&id=82610a65938409e84e11cf0cd40121a72c67916288460476e436520efb142fb3:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"3app/assets/morris.js-0.4.3/examples/years.html;T:	nameI"examples/years;T:logical_pathI"examples/years.html;T:content_typeI"text/html;T:sourceI"Ž<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Formatting Dates YYYY</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+/* data stolen from http://howmanyleft.co.uk/vehicle/jaguar_'e'_type */
+var year_data = [
+  {"period": "2012", "licensed": 3407, "sorned": 660},
+  {"period": "2011", "licensed": 3351, "sorned": 629},
+  {"period": "2010", "licensed": 3269, "sorned": 618},
+  {"period": "2009", "licensed": 3246, "sorned": 661},
+  {"period": "2008", "licensed": 3257, "sorned": 667},
+  {"period": "2007", "licensed": 3248, "sorned": 627},
+  {"period": "2006", "licensed": 3171, "sorned": 660},
+  {"period": "2005", "licensed": 3171, "sorned": 676},
+  {"period": "2004", "licensed": 3201, "sorned": 656},
+  {"period": "2003", "licensed": 3215, "sorned": 622}
+];
+Morris.Line({
+  element: 'graph',
+  data: year_data,
+  xkey: 'period',
+  ykeys: ['licensed', 'sorned'],
+  labels: ['Licensed', 'SORN']
+});
+</pre>
+</body>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Afile-digest://app/assets/morris.js-0.4.3/examples/years.html;TTF:charsetI"
+utf-8;F:digest"%.˜Ážd`{‰V·>Q`³_®Ï]E¬¾Á¥§-Ã“Ê:lengthiŽ:dependencies_digest"%Ý4rÓóR–˜‰CÝÞÌQòVâ­„;ÒßÜòíx“Pk:idI"E82610a65938409e84e11cf0cd40121a72c67916288460476e436520efb142fb3;F:
+mtimel+b„X

@@ -42,12 +42,14 @@ gem "devise"
 
 gem 'omniauth'
 
-
 #Bootstrap
 gem 'bootstrap', '~>4.0.0.alpha6'
 #gem 'bootstrap-sass', '~> 3.3.6'
 #gem "bootstrap-sass-rails"
 gem 'rails_bootstrap_navbar'
+
+#Para procesar imagenes, archivos adjuntos
+gem "paperclip", "~> 5.0.0"
 
 gem 'autoprefixer-rails'
 gem 'simple_navigation'

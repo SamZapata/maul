@@ -10,21 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728225923) do
+ActiveRecord::Schema.define(version: 20170811164525) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "communities", force: :cascade do |t|
-    t.string   "name"
-    t.text     "about"
+    t.string   "name",                default: "", null: false
+    t.text     "about",                            null: false
     t.text     "contacto"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.string   "email"
     t.string   "facebook"
     t.string   "twitter"
     t.string   "ubicacion"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

@@ -35,6 +35,13 @@
       <%= f.text_field :twitter, placeholder: 'Perfil Twitter' %>
     </div>
 
+    <div class="field">
+      <%= f.file_field :avatar %>
+      <% if @community.avatar%>
+        <%= image_tag @community.avatar.url(:thumb)%>
+      <% end %>
+     </div>    
+
     <div class="actions">
       <button>
       <%= f.submit %>

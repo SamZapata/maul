@@ -6,6 +6,6 @@ class CreateCommunities < ActiveRecord::Migration[5.0]
       t.text :contacto
 
       t.timestamps
-    end
+    end    
   end
 end

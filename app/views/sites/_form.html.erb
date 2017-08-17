@@ -1,0 +1,42 @@
+<div class="form">
+  <%= form_for(site) do |f| %>
+    <% if site.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(site.errors.count, "error") %> prohibited this site from being saved:</h2>
+
+        <ul>
+        <% site.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">      
+      <%= f.text_field :name, placeholder: 'Nombre del lugar' %>
+    </div>
+
+    <div class="field">      
+      <%= f.text_area :about, placeholder: 'Descripción del lugar' %>
+    </div>
+
+    <div class="field">      
+      <%= f.text_field :adress, placeholder: 'Dirección' %>
+    </div>
+
+    <div class="field">      
+      <%= f.text_field :phone, placeholder: 'Teléfono' %>
+    </div>
+
+    <div class="field">
+      <%= f.file_field :avatar %>
+      <% if @site.avatar%>
+        <%= image_tag @site.avatar.url(:thumb)%>
+      <% end %>      
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

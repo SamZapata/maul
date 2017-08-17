@@ -1,5 +1,8 @@
 class Community < ActiveRecord::Base
 	
+	#Se declara la asociación, una comunidad esta referenciada a un sitio
+	belongs_to :site
+	
 	include ActiveModel::AttributeAssignment
 	#Declaración para validar los campos obligatorios
 	#attr_accessor => metodo getter/setter

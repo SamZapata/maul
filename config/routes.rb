@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :events
+  resources :sites
   resources :communities
   devise_for :users
 

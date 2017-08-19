@@ -36,6 +36,12 @@
     </div>
 
     <div class="field">
+      <%= f.label :Sitio %>
+      <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
+      <!--<%= f.text_field :site_id %>-->
+    </div>
+
+    <div class="field">
       <%= f.file_field :avatar %>
       <% if @community.avatar%>
         <%= image_tag @community.avatar.url(:thumb)%>

@@ -3,6 +3,6 @@ class AddColumnsToCommunity < ActiveRecord::Migration[5.0]
     add_column :communities, :email, :string
     add_column :communities, :facebook, :string
     add_column :communities, :twitter, :string
-    add_column :communities, :ubicacion, :string    
+    change_column :communities, :ubicacion, :integer
   end   
 end

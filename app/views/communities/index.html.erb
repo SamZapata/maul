@@ -1,30 +1,43 @@
+<div class="container">
 
-<h1>Comunidades</h1>
+  <h2 class="page-header" align="center">Comunidades</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>About</th>
-      <th>Contacto</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @communities.each do |community| %>
+  <table align="center">
+    <% if user_signed_in? %>
+    <thead>
       <tr>
-        <td><%= community.name %></td>
-        <td><%= community.about %></td>
-        <td><%= community.contacto %></td>
-        <td><%= link_to 'Show', community %></td>
-        <td><%= link_to 'Edit', edit_community_path(community) %></td>
-        <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: '¿Seguro quieres irte?' } %></td>
+        <th>Name</th>
+        <th>About</th>
+        <th>Contacto</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
+    <tbody>
+      <% @communities.each do |community| %>
+        <tr>
+          <td><%= community.name %></td>
+          <td><%= community.about %></td>
+          <td><%= community.contacto %></td>
+          <td><%= link_to 'Show', community %></td>
+          <td><%= link_to 'Edit', edit_community_path(community) %></td>
+          <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: '¿Seguro quieres irte?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+
+    <% else %>
+      <div align="center">
+        <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
+        <p>¿Eres un Usuario Registrado?</p>
+        <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+        <p>Ó</p>
+        <p>Iniciar Sesión</p>
+        <a href="/users/sign_in">LOGIN</a>
+      </div>
+    <% end %>  
+  </table>
+</div>
 <br>
 
 <%= link_to 'New Community', new_community_path %>

@@ -1,31 +1,42 @@
 <section id="register_site">
   <div class="container">
     <h2 class="page-header" align="center">Sitios</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>About</th>
-          <th>Adress</th>
-          <th>Phone</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @sites.each do |site| %>
+    <% if user_signed_in? %>
+      <table>
+        <thead>
           <tr>
-            <td><%= site.name %></td>
-            <td><%= site.about %></td>
-            <td><%= site.adress %></td>
-            <td><%= site.phone %></td>
-            <td><%= link_to 'Show', site %></td>
-            <td><%= link_to 'Edit', edit_site_path(site) %></td>
-            <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <th>Name</th>
+            <th>About</th>
+            <th>Adress</th>
+            <th>Phone</th>
+            <th colspan="3"></th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
+        </thead>
+
+        <tbody>
+          <% @sites.each do |site| %>
+            <tr>
+              <td><%= site.name %></td>
+              <td><%= site.about %></td>
+              <td><%= site.adress %></td>
+              <td><%= site.phone %></td>
+              <td><%= link_to 'Show', site %></td>
+              <td><%= link_to 'Edit', edit_site_path(site) %></td>
+              <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <div align="center">
+            <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
+            <p>¿Eres un Usuario Registrado?</p>
+            <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+            <p>Ó</p>
+            <p>Iniciar Sesión</p>
+            <a href="/users/sign_in">LOGIN</a>
+          </div>
+    <% end %>
 
     <br>
 

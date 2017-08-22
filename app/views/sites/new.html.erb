@@ -1,6 +1,17 @@
 <section id="register_site">
 	<div class="container">
-		<h2 class="page-header" align="center">Registrar un Sitio</h2>
-		<%= render 'form', site: @site %>
+		<% if user_signed_in? %>
+			<h2 class="page-header" align="center">Registrar un Sitio</h2>
+			<%= render 'form', site: @site %>
+		<% else %>
+			<div align="center">
+        		<h2 class="page-header">Valida tus datos para iniciar sesión</h2>
+        		<p>¿Eres un Usuario Registrado?</p>
+		        <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+		        <p>Ó</p>
+		        <p>Iniciar Sesión</p>
+		        <a href="/users/sign_in">LOGIN</a>
+      		</div>
+		<% end %>
 	</div>
 </section> 

@@ -29,6 +29,10 @@
     </div>
 
     <div class="field">
+      <%= f.text_field :mapgoogle, placeholder: 'mapa embebido de google' %>
+    </div>
+
+    <div class="field">
       <%= f.file_field :avatar %>
       <% if @site.avatar%>
         <%= image_tag @site.avatar.url(:thumb)%>

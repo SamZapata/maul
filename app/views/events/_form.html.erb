@@ -1,47 +1,54 @@
-<%= form_for(event) do |f| %>
-  <% if event.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+<div class="form">
+  <%= form_for(event) do |f| %>
+    <% if event.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
 
-      <ul>
-      <% event.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <ul>
+        <% event.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :name, placeholder: 'Nombre del Evento' %>      
+    </div>
+
+    <div class="field">      
+      <%= f.text_area :about, placeholder: 'Descripción del Evento' %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Fecha %>
+      <%= f.date_select :fecha %>
+    </div>
+
+    <div class="field">
+      <%= f.label :hora %>
+      <%= f.time_select :hora %>
+    </div>
+
+    <div class="field">
+      <%= f.label :sitio %>      
+      <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
+    </div>
+
+    <!--<div class="field">
+      <%= f.label :estado %>
+      <%= f.text_field :estado %>
+    </div>-->
+
+    <div class="field">
+      <%= f.file_field :image %>
+      <% if @event.image%>
+        <%= image_tag @event.image.url(:thumb)%>
       <% end %>
-      </ul>
+     </div>    
+
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :about %>
-    <%= f.text_area :about %>
-  </div>
-
-  <div class="field">
-    <%= f.label :fecha %>
-    <%= f.date_select :fecha %>
-  </div>
-
-  <div class="field">
-    <%= f.label :hora %>
-    <%= f.time_select :hora %>
-  </div>
-
-  <div class="field">
-    <%= f.label :sitio %>
-    <%= f.text_field :sitio %>
-  </div>
-
-  <div class="field">
-    <%= f.label :estado %>
-    <%= f.text_field :estado %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

@@ -10,11 +10,14 @@ class SitesController < ApplicationController
   # GET /sites/1
   # GET /sites/1.json
   def show
+    @mapgoogle = Site.find(params[:id])
+    #url_map = @mapgoogle.gsub(/<iframe src="|" width="400" height="300" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"")
   end
 
   # GET /sites/new
   def new
     @site = Site.new
+    #@mapgoogle =  Site.helpers.url_map(params[:mapgoogle])
   end
 
   # GET /sites/1/edit
@@ -69,6 +72,6 @@ class SitesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def site_params
-      params.require(:site).permit(:name, :about, :adress, :phone, :avatar)
+      params.require(:site).permit(:name, :about, :adress, :phone, :avatar, :mapgoogle)
     end
 end

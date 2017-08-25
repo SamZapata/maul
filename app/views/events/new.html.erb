@@ -1,5 +1,20 @@
-<h1>New Event</h1>
-
-<%= render 'form', event: @event %>
+<section id="register_event">
+	<div class="container">
+		<% if user_signed_in? %>
+			<h2 class="page-header" align="center">Crear Un Evento</h2>
+			<%= render 'form', event: @event %>
+		<% else %>
+			<div align="center">
+		        <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
+		        <p>¿Eres un Usuario Registrado?</p>
+		        <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+		        <p>Ó</p>
+		        <p>Iniciar Sesión</p>
+		        <a href="/users/sign_in">LOGIN</a>
+      		</div>
+		<% end %>
+	</div>
+</section>
 
 <%= link_to 'Back', events_path %>
+<p id="notice"><%= notice %></p>

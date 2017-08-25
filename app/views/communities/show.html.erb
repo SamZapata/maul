@@ -1,3 +1,4 @@
+
 <section id="show_community">
 <div class="container">
 	<% if user_signed_in? %>
@@ -9,7 +10,10 @@
 						<p> <%= @community.about %> </p>
 						<p> <strong>Contacto: </strong><%= @community.contacto %> </p>
 						<p><strong>Email:</strong> <%= @community.email %> </p>
-						<p><strong>Siguenos</strong></p>
+						<p><strong>Siguenos: </strong>															
+								<a href=<%= @community.facebook %>><i class="fa fa-2x fa-facebook-square"></i></a>
+								<a href=<%= @community.twitter %>><i class="fa fa-2x fa-twitter-square"></i></a>
+						</p>
 						<p><strong>¿Donde estamos?</strong> <a href=<%= site_path %>> <%= @community.site.name %>  (<%= @community.site.adress %>) </p></a>
 					</div>
 					<div class="col-lg-4">

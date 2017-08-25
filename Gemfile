@@ -57,6 +57,9 @@ gem 'simple_navigation'
 #Esta gema permite hacer responsive el sitio, layouts, menus y más
 gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
 
+#Gema para iconos font-awesome
+gem 'font-awesome-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

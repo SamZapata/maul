@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :comunas
   resources :events
   resources :sites
   resources :communities

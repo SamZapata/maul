@@ -5,9 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>About</th>
-      <th>Enlace</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,13 +16,166 @@
   <tbody>
     <% @comunas.each do |comuna| %>
       <tr>
-        <td><%= comuna.name %></td>
+        <td>
+          <div class="thumbnail">
+            <img class="img-responsive">
+            <a href="/comunas/1"><%= image_tag 'Mapas_Comunas/comuna_1.png', :width=>200, :heigth=>200%></a>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail">
+            <img class="img-responsive">
+            <a href="/comunas/2"><%= image_tag 'Mapas_Comunas/comuna_2.png', :width=>200, :heigth=>200%></a>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail">
+            <img class="img-responsive">
+            <a href="/comunas/3"><%= image_tag 'Mapas_Comunas/comuna_3.png', :width=>200, :heigth=>200%></a>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail">
+            <img class="img-responsive">
+            <a href="/comunas/4"><%= image_tag 'Mapas_Comunas/comuna_4.png', :width=>100, :heigth=>100%></a>
+          </div>
+        </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_5.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_6.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_7.png', :width=>200, :heigth=>200%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_8.png', :width=>200, :heigth=>200%>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_9.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>          
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_10.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_11.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_12.png', :width=>130, :heigth=>130%>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_13.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_14.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_15.png', :width=>200, :heigth=>200%>
+            </div>
+          </td>
+
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_16.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_17.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_18.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_19.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_20.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_21.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>
+          <td>
+            <div class="thumbnail">
+              <img class="img-responsive">
+              <%= image_tag 'Mapas_Comunas/comuna_22.png', :width=>100, :heigth=>100%>
+            </div>
+          </td>            
+        </tr>
+
+
+        <!--<td><%= comuna.name %></td>
         <td><%= comuna.about %></td>
         <td><%= comuna.enlace %></td>
         <td><%= link_to 'Show', comuna %></td>
         <td><%= link_to 'Edit', edit_comuna_path(comuna) %></td>
-        <td><%= link_to 'Destroy', comuna, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><%= link_to 'Destroy', comuna, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      
     <% end %>
   </tbody>
 </table>

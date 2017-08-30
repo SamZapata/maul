@@ -26,6 +26,13 @@
     <%= f.text_field :enlace %>
   </div>
 
+  <div class="field">
+    <%= f.file_field :image %>
+    <% if @comuna.image%>
+      <%= image_tag @comuna.image.url(:thumb)%>
+    <% end %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

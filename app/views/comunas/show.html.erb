@@ -1,19 +1,26 @@
+
+<section id="show_comuna">
+	<div class="container">
+		<h2 class="page-header" align="center"><%= @comuna.name %></h2>
+		<div class="well">			
+			<div class="col-lg-8">
+				<a href="#"><h4>Comunidades</h4></a>
+				<a href="#"><h4>Sitios</h4></a>
+				<a href="#"><h4>Eventos</h4></a>
+			</div>
+			<div class="col-lg-4" >
+				<img class="img-responsive">
+					<%= image_tag @comuna.image.url %></img>
+			</div>
+
+			<div class="col-lg-12">
+				<p class="page-header"><strong>Sobre la Comuna</strong></p>
+				<p> <%= @comuna.about %> </p>
+			</div>
+						
+		</div>
+		<%= link_to 'Edit', edit_comuna_path(@comuna) %> |
+		<%= link_to 'Back', comunas_path %>
+	</div>
+</section>
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @comuna.name %>
-</p>
-
-<p>
-  <strong>About:</strong>
-  <%= @comuna.about %>
-</p>
-
-<p>
-  <strong>Enlace:</strong>
-  <%= @comuna.enlace %>
-</p>
-
-<%= link_to 'Edit', edit_comuna_path(@comuna) %> |
-<%= link_to 'Back', comunas_path %>

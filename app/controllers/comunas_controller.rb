@@ -69,6 +69,6 @@ class ComunasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comuna_params
-      params.require(:comuna).permit(:name, :about, :enlace)
+      params.require(:comuna).permit(:name, :about, :enlace, :image)
     end
 end

@@ -6,24 +6,36 @@
     <% if user_signed_in? %>
     <thead>
       <tr>
-        <th>Name</th>
-        <th>About</th>
-        <th>Contacto</th>
+        <th> </th>
+
         <th colspan="3"></th>
       </tr>
     </thead>
 
     <tbody>
-      <% @communities.each do |community| %>
+      
         <tr>
-          <td><%= community.name %></td>
+        <% @communities.each do |community| %>
+          <td>
+            <div class="col-md-12 text-center">
+              <div class="thumbnail">
+                <img class="img-responsive">
+                <%= link_to image_tag(community.avatar.url, :width=>100, :heigth=>100), community %>
+                <div class="caption">
+                  <%= link_to community.name, community %>
+                </div>
+              </div>
+            </div>
+          </td>
+          <!--<td><%= community.name %></td>
           <td><%= community.about %></td>
           <td><%= community.contacto %></td>
           <td><%= link_to 'Show', community %></td>
           <td><%= link_to 'Edit', edit_community_path(community) %></td>
-          <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: '¿Seguro quieres irte?' } %></td>
+          <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: '¿Seguro quieres irte?' } %></td>-->
+        <% end %>
         </tr>
-      <% end %>
+      
     </tbody>
 
     <% else %>

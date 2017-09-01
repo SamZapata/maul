@@ -10,6 +10,7 @@ class SitesController < ApplicationController
   # GET /sites/1
   # GET /sites/1.json
   def show
+    @communities = Community.all
     @mapgoogle = Site.find(params[:id])
     #url_map = @mapgoogle.gsub(/<iframe src="|" width="400" height="300" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"")
   end

@@ -3,18 +3,20 @@
 	<div class="container">
 		<h2 class="page-header" align="center"><%= @comuna.name %></h2>
 		<div class="well">			
-			<div class="col-lg-8">
-				<a href="#"><h4>Comunidades</h4></a>
-				<a href="#"><h4>Sitios</h4></a>
-				<a href="#"><h4>Eventos</h4></a>
-			</div>
-			<div class="col-lg-4" >
-				<img class="img-responsive">
-					<%= image_tag @comuna.image.url %></img>
-			</div>
+			<div class="container">
+				<div class="col-lg-8">
+					<a href="#"><h4>Comunidades</h4></a>
+					<a href="#"><h4>Sitios</h4></a>
+					<a href="#"><h4>Eventos</h4></a>
+				</div>
 
+				<div class="col-lg-4" >
+					<img class="img-responsive">
+						<%= image_tag @comuna.image.url %></img>
+				</div>
+			</div>
 			<div class="col-lg-12">
-				<p class="page-header"><strong>Sobre la Comuna</strong></p>
+				<h3 class="page-header">Sobre la Comuna</h3>
 				<p> <%= @comuna.about %> </p>
 			</div>
 						

@@ -42,6 +42,12 @@
     </div>
 
     <div class="field">
+      <%= f.label :Comuna %>
+      <%= f.select(:comuna_id, Comuna.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione una comuna'},{} )%>
+      <!--<%= f.text_field :site_id %>-->
+    </div>
+
+    <div class="field">
       <%= f.file_field :avatar %>
       <% if @community.avatar%>
         <%= image_tag @community.avatar.url(:thumb)%>

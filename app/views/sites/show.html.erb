@@ -23,7 +23,8 @@
 				</div>
 				<div class="container">
 					<h4 class="page-header">Comunidades que aquí se reunen</h4>
-					<p><%= @site.community.name %></p>
+					<%= @site.community.select(:name).map(&:name) %>					
+					
 				</div>
 			</div>
 			<%= link_to 'Modiicar', edit_site_path(@site) %> |

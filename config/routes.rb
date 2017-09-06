@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   
   resources :comunas
+  
   resources :events
+
   resources :sites
+  resources :sites do
+  	collection do
+  		get 'comunidades'
+  	end
+  end
+
   resources :communities
   devise_for :users
 

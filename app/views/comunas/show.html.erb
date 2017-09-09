@@ -1,20 +1,46 @@
 
 <section id="show_comuna">
 	<div class="container">
-		<h2 class="page-header" align="center"><%= @comuna.name %></h2>
+		<a href="javascript:document.location.reload();">
+			<h2 class="page-header" align="center"><%= @comuna.name %></h2>
+		</a>
 		<div class="well">			
 			<div class="container">
-				<div class="col-lg-8">
-					<a href="#"><h4>Comunidades</h4></a>
-					<a href="#"><h4>Sitios</h4></a>
-					<a href="#"><h4>Eventos</h4></a>
+				<div class="col-lg-4">
+					<a href="#comunidades" data-toggle="tab"><h4>Comunidades</h4></a>
+					<a href="#sitios" data-toggle="tab"><h4>Sitios</h4></a>
+					<a href="#eventos" data-toggle="tab"><h4>Eventos</h4></a>
 				</div>
 
-				<div class="col-lg-4" >
-					<img class="img-responsive">
-						<%= image_tag @comuna.image.url %></img>
+				<div class="col-lg-8" align="center" >
+					<div class="thumbnail">
+						<!-- Tab Content para mostrar un objeto {comunidad, sitio, evento} de cada comuna -->
+						<div id="TabContent" class="tab-content">
+							<div id="img_comuna" class="tab-pane fade active in">
+								<img class="img-responsive">
+									<%= image_tag @comuna.image.url %></img>
+							</div>
+
+							<div id="comunidades" class="tab-pane fade">
+								<%= @comuna.community.select(:name).map(&:name).each{:name} %>
+							</div>
+
+							<div id="sitios" class="tab-pane fade">
+								<p>no tengo nada</p>
+							</div>
+
+							<div id="eventos" class="tab-pane fade">
+								<p>no tengo nada</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<!-- Sección TAB del objeto seleccionada -->
+		
+
+			<!-- Descripción de cada comuna -->
 			<div class="col-lg-12">
 				<h3 class="page-header">Sobre la Comuna</h3>
 				<p> <%= @comuna.about %> </p>

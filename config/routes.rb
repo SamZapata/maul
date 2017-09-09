@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   
   resources :comunas
-  
+  resources :comunas, :id do
+  	collection do
+  		get 'comunidades'
+  	end
+  end
+
   resources :events
 
   resources :sites

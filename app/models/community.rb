@@ -2,6 +2,7 @@ class Community < ActiveRecord::Base
 	
 	#Se declara la asociación, una comunidad esta referenciada a un sitio
 	belongs_to :site
+	#Se declara la asociación, una comunidad esta referenciada a una comuna
 	belongs_to :comuna
 	
 	include ActiveModel::AttributeAssignment

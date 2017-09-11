@@ -4326,6 +4326,13 @@ a.list-group-item.active > .badge,
   max-height: auto;
   display: block;
 }
+
+.thumbnail-btn {
+  height: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;  
+}
+
 .thumbnail > img {
   display: block;
   max-width: 100%;

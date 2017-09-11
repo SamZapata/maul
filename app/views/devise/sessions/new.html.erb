@@ -22,12 +22,12 @@
 </head>
 
 <body>
-    
+  <div class="container" align="center">  
   <section id="bg-map">
     <h2 class="page-header" align="center">Iniciar Sesión</h2>    
     <div class="col-md-12">
     <div class="bg-map-cali">
-      <div class="row" align="center"> 
+      <div class="row"> 
         <div class="form">
       <!--<form class="login-form">-->
       
@@ -66,7 +66,7 @@
 
         <div align="center">
           <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-          <%= link_to "Registrarse", new_registration_path(resource_name) %><br />
+          <%= link_to "REGISTRATE", new_registration_path(resource_name) %><br />
           <% end -%>
         </div>
     <!--</form>-->  
@@ -77,7 +77,8 @@
     </div>
     </div>
     </div>
-  </section>  
+  </section> 
+  </div>
 
 </body>
 </html>

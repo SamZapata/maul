@@ -1,7 +1,8 @@
 <section id="register_site">
-  <div class="container">
+  <div class="container" align="center">
     <h2 class="page-header" align="center">Sitios</h2>
     <% if user_signed_in? %>
+      <%= link_to 'Registrar Un Sitio', new_site_path %>
       <table>
         <thead>
           <tr>
@@ -35,20 +36,25 @@
             </tr>          
         </tbody>
       </table>
+
     <% else %>
-      <div align="center">
-            <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
-            <p>¿Eres un Usuario Registrado?</p>
-            <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
-            <p>Ó</p>
-            <p>Iniciar Sesión</p>
-            <a href="/users/sign_in">LOGIN</a>
+      <div class="row" align="center">
+        <h4 class="page-header">Primero Debes Iniciar Sesión</h4>
+        <div class="col-md-6">
+          <div class="thumbnail thumbnail-btn">
+              <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+          </div>
+        </div>
+
+        <div class="col-md-6" >
+          <div class="thumbnail thumbnail-btn">
+            <a href="/users/sign_in">INICIAR SESIÓN</a>
+          </div>
+        </div>
       </div>
     <% end %>
 
-    <br>
-
-    <%= link_to 'New Site', new_site_path %>
+    <br>  
   </div>
 </section>
 <p id="notice"><%= notice %></p>

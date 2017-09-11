@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container" align="center">
 
-  <h2 class="page-header" align="center">Eventos</h2>
-
+  <h2 class="page-header" align="center">Eventos</h2>  
   <% if user_signed_in? %>
+  <%= link_to 'Crear Un Evento', new_event_path %>
   <table>    
     <thead>
       <tr>
@@ -11,17 +11,16 @@
       </tr>
     </thead>
 
-    <tbody>
-      
+    <tbody>            
+      <% @events.each do |event| %>
         <tr>
-        <% @events.each do |event| %>
           <td>
-            <div class="row">
+            <div class="row" align="center">
               <div class="col-md-7">
                 <img class="img-responsive">
                 <%= link_to image_tag(event.image.url, :width=>300, :heigth=>200), event %>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5" align="left">
                 <h4><%= link_to event.name, event %></h4>
                 <p><strong>Resumen: </strong><%= event.about %></p>
                 <p><strong>Fecha: </strong><%= event.fecha %></p>
@@ -39,23 +38,27 @@
           <td><%= link_to 'Show', event %></td>
           <td><%= link_to 'Edit', edit_event_path(event) %></td>
           <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        </tr>
         <% end %>
-        </tr>      
+        
     </tbody>
   </table>
   <% else %>
-    <div align="center">
-      <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
-      <p>¿Eres un Usuario Registrado?</p>
-      <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
-      <p>Ó</p>
-      <p>Iniciar Sesión</p>
-      <a href="/users/sign_in">LOGIN</a>
+    <div class="row" align="center">
+      <h4 class="page-header">Primero Debes Iniciar Sesión</h4>
+      <div class="col-md-6">
+        <div class="thumbnail thumbnail-btn">
+            <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+        </div>
+      </div>
+
+      <div class="col-md-6" >
+        <div class="thumbnail thumbnail-btn">
+          <a href="/users/sign_in">INICIAR SESIÓN</a>
+        </div>
+      </div>
     </div>
   <% end %>
 
   <br>
 </div>
-
-<%= link_to 'New Event', new_event_path %>
-<p id="notice"><%= notice %></p>

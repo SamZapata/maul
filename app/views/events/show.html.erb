@@ -9,7 +9,13 @@
               <p> <%= @event.about %> </p>
               <p> <strong>Fecha: </strong><%= @event.fecha %> </p>
               <p><strong>Hora:</strong> <%= @event.hora.strftime("%I:%M:%p") %> </p>              
-              <p><strong>Sitio</strong> <a href=<%= site_path %>> <%= @event.site.name %>  (<%= @event.site.adress %>) </p></a>
+              <p><strong>Sitio: </strong> <a href=<%= site_path %>> <%= @event.site.name %>  (<%= @event.site.adress %>) </p></a>
+              
+              
+                
+                  <iframe src= <%= @event.site.mapgoogle.gsub(/<iframe src="|" width="400" height="300" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"") %> width="430" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+              
             </div>
             <div class="col-lg-4">
               <div class="thumbnail">
@@ -20,15 +26,21 @@
         </div>
       </div>      
     <% else %>
-      <div align="center">
-        <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
-            <p>¿Eres un Usuario Registrado?</p>
-            <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
-            <p>Ó</p>
-            <p>Iniciar Sesión</p>
-            <a href="/users/sign_in">LOGIN</a>
+      <div class="row" align="center">
+        <h4 class="page-header">Primero Debes Iniciar Sesión</h4>
+        <div class="col-md-6">
+          <div class="thumbnail thumbnail-btn">
+              <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+          </div>
         </div>
-    <% end %>    
+
+        <div class="col-md-6" >
+          <div class="thumbnail thumbnail-btn">
+            <a href="/users/sign_in">INICIAR SESIÓN</a>
+          </div>
+        </div>
+      </div>
+    <% end %> 
   </div>
   <%= link_to 'Modificar', edit_event_path(@event) %>
 </section>

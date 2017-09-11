@@ -1,9 +1,14 @@
-<div class="container">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css.scss">
+  <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/login-style.css">
+<div class="container" align="center">
 
-  <h2 class="page-header" align="center">Comunidades</h2>
-
+  <h2 class="page-header" align="center">Comunidades</h2>  
   <table align="center">
     <% if user_signed_in? %>
+    <%= link_to 'Registrar Una Comunidad', new_community_path %>
     <thead>
       <tr>
         <th> </th>
@@ -20,7 +25,7 @@
             <div class="col-md-12 text-center">
               <div class="thumbnail">
                 <img class="img-responsive">
-                <%= link_to image_tag(community.avatar.url, :width=>100, :heigth=>100), community %>
+                  <%= link_to image_tag(community.avatar.url, :width=>100, :heigth=>100), community %>
                 <div class="caption">
                   <%= link_to community.name, community %>
                 </div>
@@ -37,20 +42,23 @@
         </tr>
       
     </tbody>
-
+            
     <% else %>
-      <div align="center">
-        <h2 class="page-header">Valida tus datos para iniciar sesión</h2>
-        <p>¿Eres un Usuario Registrado?</p>
-        <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
-        <p>Ó</p>
-        <p>Iniciar Sesión</p>
-        <a href="/users/sign_in">LOGIN</a>
+      <div class="row" align="center">
+        <h4 class="page-header">Primero Debes Iniciar Sesión</h4>
+        <div class="col-md-6">
+          <div class="thumbnail thumbnail-btn">
+              <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+          </div>
+        </div>
+
+        <div class="col-md-6" >
+          <div class="thumbnail thumbnail-btn">
+            <a href="/users/sign_in">INICIAR SESIÓN</a>
+          </div>
+        </div>
       </div>
     <% end %>  
   </table>
 </div>
 <br>
-
-<%= link_to 'New Community', new_community_path %>
-<p id="notice"><%= notice %></p>

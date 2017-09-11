@@ -4,14 +4,20 @@
 			<h2 class="page-header" align="center">Actualizar Información</h2>
 			<%= render 'form', community: @community %>
 		<% else %>
-			<div align="center">
-        		<h2 class="page-header">Valida tus datos para iniciar sesión</h2>
-        		<p>¿Eres un Usuario Registrado?</p>
-		        <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
-		        <p>Ó</p>
-		        <p>Iniciar Sesión</p>
-		        <a href="/users/sign_in">LOGIN</a>
-      		</div>
-		<% end %>
+	      <div class="row" align="center">
+	        <h4 class="page-header">Primero Debes Iniciar Sesión</h4>
+	        <div class="col-md-6">
+	          <div class="thumbnail thumbnail-btn">
+	              <%= link_to "REGISTRARSE", new_user_registration_path, :class => 'navbar-link' %>
+	          </div>
+	        </div>
+
+	        <div class="col-md-6" >
+	          <div class="thumbnail thumbnail-btn">
+	            <a href="/users/sign_in">INICIAR SESIÓN</a>
+	          </div>
+	        </div>
+	      </div>
+	    <% end %>
 	</div>
 </section>

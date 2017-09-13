@@ -60,6 +60,13 @@ gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
 #Gema para iconos font-awesome
 gem 'font-awesome-rails'
 
+#Gema para habilitar caracteristicas del login y asset
+gem 'rails_12factor'
+
+group :production do
+  gem 'rails_12factor'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -12,6 +12,7 @@ los mismos usuarios o bien colaboradores.
 
 ## Tabla de Contenido
 - [Sobre el Proyecto](#sobre-el-proyecto).
+- [Objetivos](#objetivos).
 - [Requerimientos Generales](#requerimientos-generales).
 
 ### Sobre el Proyecto
@@ -22,5 +23,12 @@ Una maul es una estructura en la que participan diversos actores para lograr un 
 Bajo este principio solidario que plantea la consecución de objetivos a partir del apoyo colectivo, se plantea el desarrollo de la aplicación MAUL como plataforma de servicios.
 
 Maul Project es una plataforma de servicio en la que los usuarios y colaboradores encontrarán información relevante sobre las comunidades, personas líderes, sitios (organizaciones, instituciones, empresas, escenarios, etc) y eventos; dichos eventos podrán contar con la posibilidad de que a través de un módulo de gestión de recursos, se puedan conseguir o disponer de insumos, herramientas o los medios necesarios para la realización del evento planteado, donde otros usuarios podrán ser los colaboradores o quienes apoyen las iniciativas.
+
+### Objetivos
+
+* Permitir el registro de usuarios
+* Permitir el registro de comunidades,sitios y eventos.
+* Facilitar la gestión de los eventos por medio de un módulo que permita la consecución de recursos y contribuciones
+
 
 ### Requerimientos Generales

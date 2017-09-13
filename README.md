@@ -13,6 +13,7 @@ los mismos usuarios o bien colaboradores.
 ## Tabla de Contenido
 - [Sobre el Proyecto](#sobre-el-proyecto).
 - [Objetivos](#objetivos).
+- [Alcance](#alcance).
 - [Requerimientos Generales](#requerimientos-generales).
 
 ### Sobre el Proyecto
@@ -29,6 +30,22 @@ Maul Project es una plataforma de servicio en la que los usuarios y colaboradore
 * Permitir el registro de usuarios
 * Permitir el registro de comunidades,sitios y eventos.
 * Facilitar la gestión de los eventos por medio de un módulo que permita la consecución de recursos y contribuciones
+* Familiarizar y contextualizar a los usuarios con respecto a las comunidades, sitios y eventos organizados en cada comuna de Santiago de Cali.
+* Generar un directorio abierto que sirva de guía para las personas e instituciones de la ciudad y más aún a los visitantes y turistas que arriban.
 
+### Alcance
+
+Inicialmente en el proyecto se tienen en cuenta las comunas 13, 14 y 21 de la ciduad, junto a la Universidad Santiago de Cali, con las que se hacen las primeras pruebas de funcionamiento. Se espera hacer un despliegue donde se involucren el resto de comunas y corregimientos de la ciudad; una vez cumplidad esta fase, se propondría continuar con el despliegue hacia el resto de municipios y departamentos del país.
+
+Se hace claridad en el desarrollo de la primera fase, la cual solo contempla una primera versión beta disponible solo en web. Para las siguientes fases se plantea el desarrollo de una versión movil multiplataforma.
 
 ### Requerimientos Generales
+
+El desarrollo de esta versión web del proyecto contempla el uso de las siguientes herramientas:
+
+- Ruby 2.3 como lenguaje
+- Rails 5 como framework de desarrollo backend
+- PostgreSQL como gestor de base de datos
+- Bootstrap 4 para facilitar la gestión del frontend
+- html, css y javascript
+- Git, GitHub & Heroku

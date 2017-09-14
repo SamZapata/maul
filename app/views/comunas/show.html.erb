@@ -22,11 +22,17 @@
 							</div>
 
 							<div id="comunidades" class="tab-pane fade">
-								<%= @comuna.community.select(:name).map(&:name).each{:name} %>
+								
+								<%= @comuna.community.each do |com| %>
+									<h4><%= com.name %></h4>
+								<% end %>								
+
 							</div>
 
 							<div id="sitios" class="tab-pane fade">
-								<p>no tengo nada</p>
+								<%= @comuna.sites.each do |com| %>
+									<h4><%= com.name %></h4>
+								<% end %>
 							</div>
 
 							<div id="eventos" class="tab-pane fade">

@@ -6,6 +6,9 @@ class Site < ActiveRecord::Base
 	#Asociación, un sitio puede estar asociado a una o más comunidades
 	has_many :community
 
+	#Se declara la asociación, un sitio esta referenciada a una comuna
+	belongs_to :comuna
+
 	has_attached_file :avatar, styles: { medium: "300x300", thumb: "100x100" }
   	validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 

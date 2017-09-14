@@ -1,6 +1,6 @@
 # MAUL PROJECT
 
-# Resumen
+## Resumen
 
 El sistema de información comunitario,*Maul Project*, es el producto del proceso de investigación y desarrollo en el proyecto de grado titulado “Desarrollo de un sistema de información comunitario con las comunas 13, 14 y 21 de Santiago de Cali” de la facultad de ingeniería de la Universidad Santiago de Cali. El cual busca familiarizar y referenciar a las personas, comunidades, sitios y eventos que se realizan al interior de cada comuna de la ciudad. Para la primera fase de desarrollo, es decir, esta primer etapa solo se realiza un acercamiento con algunas comunidades y sitios de las comunas mencionadas en el título del proyecto para recoger las primeras impresiones y realizar las primeras pruebas de uso. Posteriormente, en una siguiente fase de despliegue, se pretende involucrar al resto de comunas de la ciudad, corregimientos, organizaciones, instituciones, comunidades y sitios que permitan nutrir el sitio y ofrecer una información oportuna, fidedigna y actualizada al servicio de toda una población, además de las personas visitantes que arriban a la ciudad.
 
@@ -15,6 +15,7 @@ los mismos usuarios o bien colaboradores.
 - [Objetivos](#objetivos).
 - [Alcance](#alcance).
 - [Requerimientos Generales](#requerimientos-generales).
+- [Entorno Desarrollador](#entorno-desarrollador).
 
 ### Sobre el Proyecto
 **¿Que es Maul?**
@@ -48,4 +49,18 @@ El desarrollo de esta versión web del proyecto contempla el uso de las siguient
 - PostgreSQL como gestor de base de datos
 - Bootstrap 4 para facilitar la gestión del frontend
 - html, css y javascript
-- Git, GitHub & Heroku
+- Git & GitHub
+
+### Entorno Desarrollador
+
+Prepar el entorno de trabajo. Para ello es necesario instalar Ruby, Rails, PostgreSQL, Git y las gemas necesarias que se irán indicando. Se hace la salvedad que las instrucciones aquí suministradas estan basadas en ubunutu, linux.
+
+Para acceder al proyecto basta con clonar el repositorio de github
+
+1. Asegurarse de instalar Ruby, Rails, Postgres y Git.
+2. Clonar el repositorio con `git clone https://github.com/SamZapata/maul.git`
+3. Acceder al directorio `cd maul`
+4. Correr el administrador de *gemas* `bundle install`
+5. Gestionar la base de datos `rake db:migrate`
+6. Correr `rake assets:precompile`
+7. Ejecutar la aplicación `rails s -p 3000`

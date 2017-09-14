@@ -53,7 +53,7 @@ El desarrollo de esta versión web del proyecto contempla el uso de las siguient
 
 ### Entorno Desarrollador
 
-Prepar el entorno de trabajo. Para ello es necesario instalar Ruby, Rails, PostgreSQL, Git y las gemas necesarias que se irán indicando. Se hace la salvedad que las instrucciones aquí suministradas estan basadas en ubunutu, linux.
+Preparar el entorno de trabajo. Para ello es necesario instalar Ruby, Rails, PostgreSQL, Git y las gemas necesarias que se irán indicando. Se hace la salvedad que las instrucciones aquí suministradas estan basadas en ubunutu, linux.
 
 Para acceder al proyecto basta con clonar el repositorio de github
 

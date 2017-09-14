@@ -16,6 +16,7 @@ los mismos usuarios o bien colaboradores.
 - [Alcance](#alcance).
 - [Requerimientos Generales](#requerimientos-generales).
 - [Entorno Desarrollador](#entorno-desarrollador).
+- [Funcionalidades](#funcionalidades).
 
 ### Sobre el Proyecto
 **¿Que es Maul?**
@@ -64,3 +65,16 @@ Para acceder al proyecto basta con clonar el repositorio de github
 5. Gestionar la base de datos `rake db:migrate`
 6. Correr `rake assets:precompile`
 7. Ejecutar la aplicación `rails s -p 3000`
+8. Acceder desde un navegador: `http:\\localhost:3000`
+
+### Funcionalidades
+
+Entre las principales se describen:
+
+- Registro de usuarios, comunidades y sitios
+- Crear o gestionar eventos
+- Gestión de recursos para un evento
+- Buscar información sobre comunidades, sitios o eventos.
+- Tener la posibilidad de referenciar líderes de las comunas
+- Darle visibilidad a los eventos o dinámicas de las comunidades o sitios mostrando de forma práctica la información generada.
+- Participación en los eventos.

@@ -16,19 +16,19 @@ ActiveRecord::Schema.define(version: 20170914031603) do
   enable_extension "plpgsql"
 
   create_table "communities", force: :cascade do |t|
-    t.string   "name"
-    t.text     "about"
+    t.string   "name",                default: "", null: false
+    t.text     "about",                            null: false
     t.text     "contacto"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.string   "email"
     t.string   "facebook"
     t.string   "twitter"
-    t.integer  "site_id"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "site_id"
     t.integer  "comuna_id"
   end
 

@@ -23,15 +23,15 @@
 
 							<div id="comunidades" class="tab-pane fade">
 								
-								<%= @comuna.community.each do |com| %>
-									<h4><%= com.name %></h4>
+								<% @comuna.community.each do |com| %>
+									<h4><%= link_to com.name, com %></h4>
 								<% end %>								
 
 							</div>
 
 							<div id="sitios" class="tab-pane fade">
-								<%= @comuna.sites.each do |com| %>
-									<h4><%= com.name %></h4>
+								<% @comuna.sites.each do |com| %>
+									<h4><%= link_to com.name, com %></h4>
 								<% end %>
 							</div>
 

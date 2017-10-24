@@ -33,12 +33,13 @@
       
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         
-        <div class="field" align="center">          
-          <!--<%= f.label :Correo %><br />-->
+        <div class="field" align="left">          
+          <%= f.label :Email %><br />
           <%= f.email_field :email, placeholder:'email', autofocus: true %>
         </div>
 
-        <div class="field" align="center">          
+        <div class="field" align="left">          
+          <%= f.label :Contraseña %><br />
           <%= f.password_field :password, placeholder:'contraseña', autocomplete: "off" %>
         </div>
 

@@ -6,13 +6,13 @@
 		</a>
 		<div class="well">			
 			<div class="container">
-				<div class="col-lg-4">
+				<div class="col-lg-2">
 					<a href="#comunidades" data-toggle="tab"><h4>Comunidades</h4></a>
 					<a href="#sitios" data-toggle="tab"><h4>Sitios</h4></a>
 					<a href="#eventos" data-toggle="tab"><h4>Eventos</h4></a>
 				</div>
 
-				<div class="col-lg-8" align="center" >
+				<div class="col-lg-10" align="center" >
 					<div class="thumbnail">
 						<!-- Tab Content para mostrar un objeto {comunidad, sitio, evento} de cada comuna -->
 						<div id="TabContent" class="tab-content">
@@ -24,14 +24,23 @@
 							<div id="comunidades" class="tab-pane fade">
 								
 								<% @comuna.community.each do |com| %>
-									<h4><%= link_to com.name, com %></h4>
+									<div class="col-lg-2">
+										<div class="thumbnail">
+											<h4><%= link_to com.name, com %></h4>
+										</div>
+									</div>
 								<% end %>								
 
 							</div>
 
 							<div id="sitios" class="tab-pane fade">
+								<h4>Categoría del Sitio</h4>
 								<% @comuna.sites.each do |com| %>
-									<h4><%= link_to com.name, com %></h4>
+								<div class="col-lg-2">
+									<div class="thumbnail">
+										<h4><%= link_to com.name, com %></h4>
+									</div>
+								</div>
 								<% end %>
 							</div>
 

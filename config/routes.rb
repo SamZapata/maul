@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'user/show'
+
   resources :comunas
   resources :comunas, :id do
   	collection do
@@ -17,6 +19,9 @@ Rails.application.routes.draw do
   end
 
   resources :communities
+
+  resources :site_categories
+
   devise_for :users
 
   get 'home/index'  

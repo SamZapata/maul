@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombreRecurso: MyString
+  tipo: MyString
+  Cantidad: 1
+  Disponibilidad: 1
+  observacion: MyString
+  aportado: 1
+  pendiente: 1
+
+two:
+  nombreRecurso: MyString
+  tipo: MyString
+  Cantidad: 1
+  Disponibilidad: 1
+  observacion: MyString
+  aportado: 1
+  pendiente: 1

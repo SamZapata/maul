@@ -1,0 +1,52 @@
+<%= form_for(mean) do |f| %>
+  <% if mean.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mean.errors.count, "error") %> prohibited this mean from being saved:</h2>
+
+      <ul>
+      <% mean.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombreRecurso %>
+    <%= f.text_field :nombreRecurso %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo %>
+    <%= f.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Cantidad %>
+    <%= f.number_field :Cantidad %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Disponibilidad %>
+    <%= f.number_field :Disponibilidad %>
+  </div>
+
+  <div class="field">
+    <%= f.label :observacion %>
+    <%= f.text_field :observacion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :aportado %>
+    <%= f.number_field :aportado %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pendiente %>
+    <%= f.number_field :pendiente %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

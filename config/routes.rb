@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   
+  resources :means
+  get 'means/_form'
+
+  get 'means/list'
+
   get 'user/show'
 
   resources :comunas

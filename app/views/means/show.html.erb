@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombrerecurso:</strong>
+  <%= @mean.nombreRecurso %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @mean.tipo %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @mean.Cantidad %>
+</p>
+
+<p>
+  <strong>Disponibilidad:</strong>
+  <%= @mean.Disponibilidad %>
+</p>
+
+<p>
+  <strong>Observacion:</strong>
+  <%= @mean.observacion %>
+</p>
+
+<p>
+  <strong>Aportado:</strong>
+  <%= @mean.aportado %>
+</p>
+
+<p>
+  <strong>Pendiente:</strong>
+  <%= @mean.pendiente %>
+</p>
+
+<%= link_to 'Edit', edit_mean_path(@mean) %> |
+<%= link_to 'Back', means_path %>

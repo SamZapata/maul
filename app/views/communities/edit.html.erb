@@ -1,7 +1,10 @@
 <section id="modify_community">
 	<div class="container">
 		<% if user_signed_in?%>
-			<h2 class="page-header" align="center">Actualizar Información</h2>
+			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
+				<h2 class="page-header" align="center">Actualiza la Información de Tu Comunidad</h2>
+			</nav>
+						
 			<%= render 'form', community: @community %>
 		<% else %>
 	      <div class="row" align="center">

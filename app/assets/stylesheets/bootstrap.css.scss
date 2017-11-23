@@ -3621,6 +3621,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-radius: 0;
   }
 }
+
+.navbar-static-sub {
+  border-width: 0 0 1px;
+}
+@media (min-width: 468px) {
+  .navbar-static-sub {
+    border-radius: 1;
+  }
+}
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -3914,6 +3923,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #53bdfd;
   border-color: #eeeeee;
 }
+
+.navbar-inverse-sub {
+  background-color: #EEF1F2;
+  border-color: #eeeeee;
+}
+
 .navbar-inverse .navbar-brand {
   color: #d7d7d7;
 }

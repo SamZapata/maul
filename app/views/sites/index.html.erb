@@ -1,6 +1,10 @@
 <section id="register_site">
-  <div class="container" align="center">
+  
+  <nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
     <h2 class="page-header" align="center">Sitios</h2>
+  </nav>
+
+  <div class="container" align="center">    
     <% if user_signed_in? %>
       <%= link_to 'Registrar Un Sitio', new_site_path %>
       

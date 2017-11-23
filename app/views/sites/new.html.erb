@@ -1,7 +1,9 @@
 <section id="register_site">
 	<div class="container">
 		<% if user_signed_in? %>
-			<h2 class="page-header" align="center">Registrar un Sitio</h2>
+			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
+				<h2 class="page-header" align="center">Creación de un Sitio</h2>
+			</nav>			
 			<%= render 'form', site: @site %>
 		<% else %>
 	      <div class="row" align="center">

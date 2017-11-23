@@ -5,7 +5,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/login-style.css">
 <div class="container" align="center">
 
-  <h2 class="page-header" align="center">Comunidades</h2>  
+  <nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
+    <h2 class="page-header" align="center">Comunidades</h2>
+  </nav>
+
   <table align="center">
     <% if user_signed_in? %>
     <%= link_to 'Registrar Una Comunidad', new_community_path %>

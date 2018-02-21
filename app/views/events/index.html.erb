@@ -3,7 +3,7 @@
   <h2 class="page-header" align="center">Eventos</h2>  
   <% if user_signed_in? %>
   <%= link_to 'Crear Un Evento', new_event_path %>
-  <table>    
+  <table>
     <thead>
       <tr>
         <th> </th>        
@@ -29,15 +29,6 @@
             <hr>
           </td>
 
-          <!--<td><%= event.name %></td>
-          <td><%= event.about %></td>
-          <td><%= event.fecha %></td>
-          <td><%= event.hora %></td>
-          <td><%= event.sitio %></td>
-          <td><%= event.estado %></td>
-          <td><%= link_to 'Show', event %></td>
-          <td><%= link_to 'Edit', edit_event_path(event) %></td>
-          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
         </tr>
         <% end %>
         

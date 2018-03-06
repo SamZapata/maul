@@ -297,9 +297,16 @@ img {
 }
 .img-responsive {
   display: block;
-  max-width: 100%;
+  max-width: auto;
   height: auto;
 }
+
+.img-responsive-events {
+  display: block;
+  max-width: auto;
+  height: auto;
+}
+
 .img-rounded {
   border-radius: 6px;
 }
@@ -466,7 +473,7 @@ h4 small,
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 60px 0 20px;
   border-bottom: 1px solid #f7f7f7;
 }
 ul,
@@ -3309,6 +3316,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #f7f7f7;
+  color: #53bdfd;
 }
 .nav > li.disabled > a {
   color: #d7d7d7;
@@ -3665,7 +3673,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-radius: 4px;
 }
 .navbar-toggle .icon-bar {
@@ -3673,6 +3681,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  color: #dbd8d5;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -3689,6 +3698,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-top: 20px;
   padding-bottom: 10px;
   line-height: 20px;
+  color: white;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -3696,7 +3706,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
+    background-color: white;
     border: 0;
     box-shadow: none;
   }
@@ -3914,25 +3924,41 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #53bdfd;
   border-color: #eeeeee;
 }
+
+.navbar-inverse-community {
+  background-color: #3a8b42;
+  border-color: #eeeeee;
+}
+
+.navbar-inverse-event {
+  background-color: #115ac2;
+  border-color: #eeeeee;
+}
+
+.navbar-inverse-site {
+  background-color: #da412d;
+  border-color: #eeeeee;
+}
+
 .navbar-inverse .navbar-brand {
   color: #d7d7d7;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #ffffff;
-  background-color: transparent;
+  background-color: #c6d0d9;
 }
 .navbar-inverse .navbar-text {
   color: #d7d7d7;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
+  color: #53bdfd;
+  background-color: #f7f7f7;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,

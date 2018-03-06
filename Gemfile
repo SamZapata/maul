@@ -1,4 +1,4 @@
-  source 'https://rubygems.org'
+source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -39,6 +39,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Registro y autenticación de usuarios
 gem "devise"
+#Access authorization for users
+gem 'cancancan', '~> 2.0'
 
 gem 'omniauth'
 

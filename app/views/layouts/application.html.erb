@@ -8,16 +8,20 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>     
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee|Roboto|Ubuntu|Graduate" rel="stylesheet">
+
     <!-- Implementación de Bootstrap -->
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css.scss">
+    <link rel="stylesheet" type="text/css" href="stylesheets/scaffolds.scss">
 
   </head>
 
   <body>
-    <!-- Menú Barra superior -->    
-    <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top" role="navigation">      
-      <div class="container">        
+    <!-- Menú Barra superior -->
+    <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top" role="navigation"> 
+      <div class="container">
           <div class="navbar-header">          
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Maul</span>
@@ -27,12 +31,12 @@
             </button>
           
             <a class="navbar-brand" href="/home/index.html">
-              <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>70, :height=>40 %>
+              <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>80, :height=>47 %>
             </a>
           </div>          
 
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">
+          <div class="collapse navbar-collapse navbar-ex1-collapse ">
+            <ul class="nav navbar-nav navbar-right menu-header">
               <li>
                 <a href="/communities">Comunidades</a>
               </li>

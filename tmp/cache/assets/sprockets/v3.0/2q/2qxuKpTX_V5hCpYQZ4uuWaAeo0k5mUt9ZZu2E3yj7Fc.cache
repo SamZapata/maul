@@ -1,46 +1,0 @@
-{:uriI"—file://app/assets/jquery-file-upload/server/node/package.json?type=application/json&id=b26361b1c3f72df48ea512d445121eed6359cf3ef36f3d8210912d1e367cc4b1:ET:load_pathI""app/assets/jquery-file-upload;T:filenameI";app/assets/jquery-file-upload/server/node/package.json;T:	nameI"server/node/package;T:logical_pathI"server/node/package.json;T:content_typeI"application/json;T:sourceI"L{
-    "name": "blueimp-file-upload-node",
-    "version": "2.0.0",
-    "title": "jQuery File Upload Node.js example",
-    "description": "Node.js implementation example of a file upload handler for jQuery File Upload.",
-    "keywords": [
-        "file",
-        "upload",
-        "cross-domain",
-        "cross-site",
-        "node"
-    ],
-    "homepage": "https://github.com/blueimp/jQuery-File-Upload",
-    "author": {
-        "name": "Sebastian Tschan",
-        "url": "https://blueimp.net"
-    },
-    "maintainers": [
-        {
-            "name": "Sebastian Tschan",
-            "url": "https://blueimp.net"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/blueimp/jQuery-File-Upload.git"
-    },
-    "bugs": "https://github.com/blueimp/jQuery-File-Upload/issues",
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
-        }
-    ],
-    "dependencies": {
-        "formidable": ">=1.0.11",
-        "node-static": ">=0.6.5",
-        "imagemagick": ">=0.1.3"
-    },
-    "main": "server.js"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ifile-digest://app/assets/jquery-file-upload/server/node/package.json;TTF:charsetI"
-utf-8;F:digest"%Á ˜Z5žd©®nR£é¦'Ð<½¥Òý¨ï†]{"½:lengthiL:dependencies_digest"%ÎD(c`9¾æÄ.ÜÁš¤0R	Ö{g¥÷Ü[€ƒk+€:idI"Eb26361b1c3f72df48ea512d445121eed6359cf3ef36f3d8210912d1e367cc4b1;F:
-mtimel+b„X

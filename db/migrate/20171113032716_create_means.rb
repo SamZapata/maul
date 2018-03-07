@@ -4,7 +4,7 @@ class CreateMeans < ActiveRecord::Migration[5.0]
       t.string :nombreRecurso
       t.string :tipo
       t.integer :Cantidad
-      t.integer :Disponibilidad
+      t.integer :disponibilidad
       t.string :observacion
       t.integer :aportado
       t.integer :pendiente

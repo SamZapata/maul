@@ -1,43 +1,0 @@
-{:uriI"èfile://app/assets/morris.js-0.4.3/examples/donut-colors.html?type=text/html&id=e012367ac3c0a5afde8add668823a9439dd8ee8779255cf9fe4ae3434ae167b1:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI":app/assets/morris.js-0.4.3/examples/donut-colors.html;T:	nameI"examples/donut-colors;T:logical_pathI"examples/donut-colors.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
-<head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
-  <script src="../morris.js"></script>
-  <script src="lib/prettify.js"></script>
-  <script src="lib/example.js"></script>
-  <link rel="stylesheet" href="lib/example.css">
-  <link rel="stylesheet" href="lib/prettify.css">
-  <link rel="stylesheet" href="../morris.css">
-  <style>
-    body { background:#ccc; }
-  </style>
-</head>
-<body>
-<h1>Donut Chart</h1>
-<div id="graph"></div>
-<pre id="code" class="prettyprint linenums">
-Morris.Donut({
-  element: 'graph',
-  data: [
-    {value: 70, label: 'foo'},
-    {value: 15, label: 'bar'},
-    {value: 10, label: 'baz'},
-    {value: 5, label: 'A really really long label'}
-  ],
-  backgroundColor: '#ccc',
-  labelColor: '#060',
-  colors: [
-    '#0BA462',
-    '#39B580',
-    '#67C69D',
-    '#95D7BB'
-  ],
-  formatter: function (x) { return x + "%"}
-});
-</pre>
-</body>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://app/assets/morris.js-0.4.3/examples/donut-colors.html;TTF:charsetI"
-utf-8;F:digest"%x‹∫[õTí M›O¬QYZºH∞÷Ù˜d=	¿j@F:lengthi:dependencies_digest"%ØÜ(ENwvH—ö4Ô3ø||ê±Ù^bi¨†’ *C3:idI"Ee012367ac3c0a5afde8add668823a9439dd8ee8779255cf9fe4ae3434ae167b1;F:
-mtimel+bÑX

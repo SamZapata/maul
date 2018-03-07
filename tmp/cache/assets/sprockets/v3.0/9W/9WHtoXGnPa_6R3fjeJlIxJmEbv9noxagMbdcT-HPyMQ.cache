@@ -1,51 +1,0 @@
-{:uriI"‡file://app/assets/chart-master/samples/doughnut.html?type=text/html&id=290916031dabc3c2e9b006be108f1d144284baa68441bd4a0f4784ed371988d5:ET:load_pathI"app/assets/chart-master;T:filenameI"2app/assets/chart-master/samples/doughnut.html;T:	nameI"samples/doughnut;T:logical_pathI"samples/doughnut.html;T:content_typeI"text/html;T:sourceI"İ<!doctype html>
-<html>
-	<head>
-		<title>Doughnut Chart</title>
-		<script src="../Chart.js"></script>
-		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
-		<style>
-			canvas{
-			}
-		</style>
-	</head>
-	<body>
-		<canvas id="canvas" height="450" width="450"></canvas>
-
-
-	<script>
-
-		var doughnutData = [
-				{
-					value: 30,
-					color:"#F7464A"
-				},
-				{
-					value : 50,
-					color : "#46BFBD"
-				},
-				{
-					value : 100,
-					color : "#FDB45C"
-				},
-				{
-					value : 40,
-					color : "#949FB1"
-				},
-				{
-					value : 120,
-					color : "#4D5360"
-				}
-			
-			];
-
-	var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
-	
-	</script>
-	</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"@file-digest://app/assets/chart-master/samples/doughnut.html;TTF:charsetI"
-utf-8;F:digest"%.¯eë½e¬]çê£LJŠ¾ÎBZŸÌçoäÿXã:lengthiİ:dependencies_digest"%Ø"£˜Ó¾«å?œÌ±?N¸šu¨Û­sb?e'[¢Ã:idI"E290916031dabc3c2e9b006be108f1d144284baa68441bd4a0f4784ed371988d5;F:
-mtimel+b„X

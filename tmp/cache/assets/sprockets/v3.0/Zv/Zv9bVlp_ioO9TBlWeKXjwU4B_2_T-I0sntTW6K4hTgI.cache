@@ -1,23 +1,0 @@
-{:uriI"Œfile://app/assets/morris.js-0.4.3/examples/_template.html?type=text/html&id=998001f535184224031593a4e3ab458e293f9ae537e92c6d20ee6d303c4a1eb2:ET:load_pathI"app/assets/morris.js-0.4.3;T:filenameI"7app/assets/morris.js-0.4.3/examples/_template.html;T:	nameI"examples/_template;T:logical_pathI"examples/_template.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
-<head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
-  <script src="../morris.js"></script>
-  <script src="lib/prettify.js"></script>
-  <script src="lib/example.js"></script>
-  <link rel="stylesheet" href="lib/example.css">
-  <link rel="stylesheet" href="lib/prettify.css">
-</head>
-<body>
-<h1>Title</h1>
-<div id="graph"></div>
-<pre id="code" class="prettyprint linenums">
-// Insert code here:
-// it'll get eval()-ed and prettyprinted.
-</pre>
-</body>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Efile-digest://app/assets/morris.js-0.4.3/examples/_template.html;TTF:charsetI"
-utf-8;F:digest"%À„qGXx;éD½r›Ã£‡'*cñ/^Tæ‚Ä˜å„Èú:lengthi:dependencies_digest"%îA[w[Ó·õŸŒÒ.ø[!j„HÒP#k•5PâÙë0:idI"E998001f535184224031593a4e3ab458e293f9ae537e92c6d20ee6d303c4a1eb2;F:
-mtimel+b„X

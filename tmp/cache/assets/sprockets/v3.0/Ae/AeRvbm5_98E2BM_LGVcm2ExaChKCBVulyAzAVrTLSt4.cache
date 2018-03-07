@@ -1,57 +1,0 @@
-{:uriI"ûfile://app/assets/jquery-file-upload/blueimp-file-upload.jquery.json?type=application/json&id=fd9dac3086a9b07c4b620cde965f586ec37c6693a79f5461311e28e8d7d13eeb:ET:load_pathI""app/assets/jquery-file-upload;T:filenameI"Bapp/assets/jquery-file-upload/blueimp-file-upload.jquery.json;T:	nameI"blueimp-file-upload.jquery;T:logical_pathI"$blueimp-file-upload.jquery.json;T:content_typeI"application/json;T:sourceI"{
-    "name": "blueimp-file-upload",
-    "version": "7.2.1",
-    "title": "jQuery File Upload",
-    "author": {
-        "name": "Sebastian Tschan",
-        "url": "https://blueimp.net"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
-        }
-    ],
-    "dependencies": {
-        "jquery": ">=1.6",
-        "jquery.ui.widget": ">=1.8"
-    },
-    "description": "File Upload widget with multiple file selection, drag&drop support, progress bars and preview images for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing. Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.",
-    "keywords": [
-        "jquery",
-        "file",
-        "upload",
-        "widget",
-        "multiple",
-        "selection",
-        "drag",
-        "drop",
-        "progress",
-        "preview",
-        "cross-domain",
-        "cross-site",
-        "chunk",
-        "resume",
-        "gae",
-        "go",
-        "python",
-        "php",
-        "bootstrap"
-    ],
-    "homepage": "https://github.com/blueimp/jQuery-File-Upload",
-    "docs": "https://github.com/blueimp/jQuery-File-Upload/wiki",
-    "demo": "http://blueimp.github.com/jQuery-File-Upload/",
-    "bugs": "https://github.com/blueimp/jQuery-File-Upload/issues",
-    "maintainers": [
-        {
-            "name": "Sebastian Tschan",
-            "url": "https://blueimp.net"
-        }
-    ]
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Pfile-digest://app/assets/jquery-file-upload/blueimp-file-upload.jquery.json;TTF:charsetI"
-utf-8;F:digest"%ç3Ok‡≈K9“ä›˚%µ°/îêx¢⁄t	í?zUNk:lengthi:dependencies_digest"%_P~ôéƒµM±f⁄‘‰aéE»ÜHiG
-6^≥–&Ï<h,:idI"Efd9dac3086a9b07c4b620cde965f586ec37c6693a79f5461311e28e8d7d13eeb;F:
-mtimel+bÑX

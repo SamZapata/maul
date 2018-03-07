@@ -61,7 +61,10 @@
 <section id="register_event">
 	<div class="container">
 		<% if user_signed_in? %>
-			<h2 class="page-header" align="center">Crear Un Evento</h2>
+			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
+				<h2 class="page-header" align="center">Crear un Evento</h2>
+			</nav>
+			
 			<%= render 'form', event: @event %>
 		<% else %>
 	      <div class="row" align="center">

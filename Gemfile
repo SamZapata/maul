@@ -11,9 +11,9 @@ gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 #Database postgres
-gem 'pg'
+gem 'pg', '~> 0.21.0'
 #Database MYSQL
-gem 'mysql2', '>= 0.3.18', '< 0.5' 
+#gem 'mysql2', '>= 0.3.18', '< 0.5' 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -51,7 +51,7 @@ gem 'bootstrap', '~>4.0.0.alpha6'
 gem 'rails_bootstrap_navbar'
 
 #Para procesar imagenes, archivos adjuntos
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 5.2.0"
 
 gem 'autoprefixer-rails'
 gem 'simple_navigation'

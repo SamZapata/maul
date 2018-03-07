@@ -62,7 +62,10 @@
 <section id="edit_site">
 	<div class="container">
 		<% if user_signed_in? %>
-			<h2 class="page-header" align="center">Modificar el Sitio</h2>
+			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
+				<h2 class="page-header" align="center">Edición del Sitio</h2>
+			</nav>
+
 			<%= render 'form', site: @site %>
 			<%= link_to 'Show', @site %> |
 			<%= link_to 'Back', sites_path %>

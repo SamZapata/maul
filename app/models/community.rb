@@ -11,7 +11,11 @@ class Community < ActiveRecord::Base
 	#attr_accessor :name
 	validates :name, :about, :presence => true	
 
-	has_attached_file :avatar, styles: { medium: "300x300", thumb: "100x100" }
+	has_attached_file :avatar,
+	:storage => :cloudinary,
+	:path => ':id/:style/:filename',
+	:cloudinary_credentials => Rails.root.join("config/cloudinary.yml"),
+	styles: { medium: "300x300", thumb: "100x100" }
   	validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
 end

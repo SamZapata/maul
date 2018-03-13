@@ -52,6 +52,11 @@ gem 'rails_bootstrap_navbar'
 
 #Para procesar imagenes, archivos adjuntos
 gem "paperclip", "~> 5.2.0"
+#
+gem 'carrierwave'
+#gema que permite hostear archivos adjuntos con paperclip
+gem 'paperclip-cloudinary'
+
 
 gem 'autoprefixer-rails'
 gem 'simple_navigation'

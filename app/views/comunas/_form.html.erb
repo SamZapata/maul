@@ -1,39 +1,42 @@
-<%= form_for(comuna) do |f| %>
-  <% if comuna.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(comuna.errors.count, "error") %> prohibited this comuna from being saved:</h2>
+<div class="form">
+  <%= form_for(comuna) do |f| %>
+    <% if comuna.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(comuna.errors.count, "error") %> prohibited this comuna from being saved:</h2>
 
-      <ul>
-      <% comuna.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <ul>
+        <% comuna.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :Nombre_de_la_Comuna %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Sobre_la_Comuna %>
+      <%= f.text_area :about %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Google_Map %>
+      <%= f.text_field :enlace, placeholder: 'mapa embebido de google' %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Imagen %>
+      <%= f.file_field :image %>
+      <% if @comuna.image%>
+        <%= image_tag @comuna.image.url(:thumb)%>
       <% end %>
-      </ul>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :about %>
-    <%= f.text_area :about %>
-  </div>
-
-  <div class="field">
-    <%= f.label :enlace %>
-    <%= f.text_field :enlace %>
-  </div>
-
-  <div class="field">
-    <%= f.file_field :image %>
-    <% if @comuna.image%>
-      <%= image_tag @comuna.image.url(:thumb)%>
-    <% end %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

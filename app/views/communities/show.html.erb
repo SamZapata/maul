@@ -1,4 +1,7 @@
+<!-- Showing communities-->
+
 <!-- Menú Barra superior -->
+
     <nav class="navbar navbar-inverse-community navbar-static-top navbar-fixed-top" role="navigation">      
       <div class="container">
           <div class="navbar-header">          
@@ -9,7 +12,7 @@
               <span class="icon-bar"></span>
             </button>
           
-            <a class="navbar-brand" href="/home/index.html">
+            <a class="navbar-brand" href="/comunas">
               <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>80, :height=>47 %>
             </a>
           </div>          
@@ -73,7 +76,7 @@
 								<a href= <%= @community.facebook %> ><i class="fa fa-2x fa-facebook-square"></i></a>
 								<a href=<%= @community.twitter %>><i class="fa fa-2x fa-twitter-square"></i></a>
 						</p>
-						<p><strong>¿Donde estamos?</strong> <a href=<%= site_path %>> <%= @community.site.name %>  (<%= @community.site.adress %>) </p></a>
+						<p><strong>¿Donde estamos?</strong> <a href=<%= site_path(:id) %>> <%= @community.site.name %>  (<%= @community.site.adress %>) </p></a>
 					</div>
 					<div class="col-lg-4">
 						<div class="thumbnail">

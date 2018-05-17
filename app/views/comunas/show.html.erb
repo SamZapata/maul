@@ -16,9 +16,12 @@
 					<div class="thumbnail">
 						<!-- Tab Content para mostrar un objeto {comunidad, sitio, evento} de cada comuna -->
 						<div id="TabContent" class="tab-content">
-							<div id="img_comuna" class="tab-pane fade active in">
-								<img class="img-responsive">
-									<%= image_tag @comuna.image.url %></img>
+							<div id="img_comuna" class="tab-pane fade active in maps-google">
+								<iframe src= <%= @comuna.enlace.gsub(/<iframe src="|" width="600" height="450" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"") %> frameborder="0" style="border:0" allowfullscreen>
+								</iframe>
+								<!--<img class="img-responsive">
+									<%= image_tag @comuna.image.url %>
+								</img>-->
 							</div>
 
 							<div id="comunidades" class="tab-pane fade">

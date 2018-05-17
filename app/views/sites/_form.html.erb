@@ -12,23 +12,38 @@
       </div>
     <% end %>
 
-    <div class="field">      
-      <%= f.text_field :name, placeholder: 'Nombre del lugar' %>
+    <div class="field" style="align">      
+      <div class="text-left">
+        <%= f.label :Nombre_del_Sitio %>
+      </div>
+      <%= f.text_field :name, placeholder: 'Ej: Parque La Arboleda' %>
+    </div>
+
+    <div class="field">
+      <div class="text-left">
+        <%= f.label :Descripción %>
+      </div>
+      <%= f.text_area :about, placeholder: 'Cuentale a la gente que pueden venir a hacer' %>
     </div>
 
     <div class="field">      
-      <%= f.text_area :about, placeholder: 'Descripción del lugar' %>
-    </div>
-
-    <div class="field">      
+      <div class="text-left">
+        <%= f.label :Dirección %>
+      </div>
       <%= f.text_field :adress, placeholder: 'Dirección' %>
     </div>
 
-    <div class="field">      
+    <div class="field">
+      <div class="text-left">
+        <%= f.label :Teléfono %>
+      </div>
       <%= f.text_field :phone, placeholder: 'Teléfono' %>
     </div>
 
     <div class="field">
+      <div class="text-left">
+        <%= f.label :Goole_Map %>
+      </div>
       <%= f.text_field :mapgoogle, placeholder: 'mapa embebido de google' %>
     </div>
 
@@ -38,6 +53,9 @@
     </div>
 
     <div class="field">
+      <div class="text-left">
+        <%= f.label :Imagen %>
+      </div>
       <%= f.file_field :avatar %>
       <% if @site.avatar%>
         <%= image_tag @site.avatar.url(:thumb)%>

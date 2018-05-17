@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require bootstrap
+//= require source_vector_map
 //= require tether
 //= require jquery_ujs
 //= require turbolinks

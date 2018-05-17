@@ -9,7 +9,7 @@
               <span class="icon-bar"></span>
             </button>
           
-            <a class="navbar-brand" href="/home/index.html">
+            <a class="navbar-brand" href="/comunas">
               <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>80, :height=>47 %>
             </a>
           </div>          
@@ -62,9 +62,7 @@
 <section id="edit_site">
 	<div class="container">
 		<% if user_signed_in? %>
-			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
 				<h2 class="page-header" align="center">Edición del Sitio</h2>
-			</nav>
 
 			<%= render 'form', site: @site %>
 			<%= link_to 'Show', @site %> |

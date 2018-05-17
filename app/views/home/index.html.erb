@@ -10,6 +10,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.scss">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/login-style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery-jvectormap-2.0.3.min.css">
+
+    <!-- Jquery jvectormap -->
+    <script src="javascripts/jquery-jvectormap-2.0.3.js"></script>
+    
+    <!-- Map Comunas santiago de Cali -->
+    <script src="javascripts/source_vector_map.js"></script>
+
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
+
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
     <!--
     <%= csrf_meta_tags %>
@@ -21,14 +33,25 @@
     <!-- , 'data-turbolinks-track': 'reload' -->
 </head>
 
-  <body>
+  <body>  
 
     <section id="bg-map">
       <div class="container">
       <h2 class="page-header" align="center">Una Ciudad, Una Comunidad</h2>
       <div class="container" align="center">
         <h4 align="center">Selecciona una Comuna</h4>
-        <a href="/comunas/"> <%= image_tag 'map_comunas_cali.gif', :width=>500, :heigth=>500%> </a>
+        <!--<a href="/comunas/"> <%= image_tag 'map_comunas_cali.gif', :width=>500, :heigth=>500%> </a>-->
+        <div class="container">
+          <div class="col-md-10 col-md-offset-1 col-xs-10">
+            <div id="world-map">
+
+            </div>
+            <script>                
+              $(function() { $('#world-map').vectorMap({ map: 'map' })});
+            </script>
+          </div>
+        </div>
+
       </div>
       </div>
     </section>

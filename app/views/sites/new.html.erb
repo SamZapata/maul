@@ -9,7 +9,7 @@
               <span class="icon-bar"></span>
             </button>
           
-            <a class="navbar-brand" href="/home/index.html">
+            <a class="navbar-brand" href="/comunas">
               <%= image_tag "Logo_MAUL_Project_BLANCO_.png", :width=>80, :height=>47 %>
             </a>
           </div>          
@@ -62,9 +62,7 @@
 <section id="register_site">
 	<div class="container">
 		<% if user_signed_in? %>
-			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
-				<h2 class="page-header" align="center">Creación de un Sitio</h2>
-			</nav>			
+				<h2 class="page-header" align="center">Registro de Sitios</h2>
 			<%= render 'form', site: @site %>
 		<% else %>
 	      <div class="row" align="center">

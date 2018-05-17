@@ -50,6 +50,9 @@ gem 'bootstrap', '~>4.0.0.alpha6'
 #gem "bootstrap-sass-rails"
 gem 'rails_bootstrap_navbar'
 
+#Angular
+gem 'angularjs-rails'
+
 #Para procesar imagenes, archivos adjuntos
 gem "paperclip", "~> 5.2.0"
 #

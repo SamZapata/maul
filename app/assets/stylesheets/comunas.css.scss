@@ -4,25 +4,81 @@
 	position: absolute;
 }
 
-#comuna-uno {
-	position: absolute;
-	margin-top: 221px;
-	left: 10%;
-	//background: red;
+.comuna {
+	opacity: 1;
+	fill: #eb1a1a;
+	fill-opacity: 1;
+	stroke: #ffffff;
+	stroke-width: 0.26458332;
+	stroke-opacity: 1;
+}
+.comuna:hover{
+	fill: #faf3f9a4;
+}
+.comuna-number {
+	fill: #ffffff;
+}
+.comuna-number:hover {
+	fill: #3a8b42;
 }
 
-#comuna-dos {
-	position: absolute;
-	margin-top: 60px;
-	left: 24%;
+.comuna-uno {
+	opacity: 1;
+	fill: #eb1a1a;
+	fill-opacity: 1;
+	stroke: #ffffff;
+	stroke-width: 0.26458332;
+	stroke-opacity: 1;
+	background-color: red;
+	-webkit-mask-image: url('https://pbs.twimg.com/media/CClDy67W4AA0Le4.jpg');
+	mask-image: url('https://pbs.twimg.com/media/CClDy67W4AA0Le4.jpg');
+}
+.comuna-uno:hover{
+	fill: #faf3f9a4;
+}
+.comuna-uno-number {
+	fill: #115ac2;
+}
+.comuna-uno-number:hover {
+	fill: #3a8b42;
 }
 
-#comuna-tres {
-	position: absolute;
-	margin-top: 244px;
-	left: 27.1%;
+.comuna-dos {
+	opacity: 1;
+	fill: #eb1a1a;
+	fill-opacity: 1;
+	stroke: #ffffff;
+	stroke-width: 0.26458332;
+	stroke-opacity: 1;
+}
+.comuna-dos:hover{
+	fill: #faf3f9a4;
+}
+.comuna-dos-number {
+	fill: #115ac2;
+}
+.comuna-dos-number:hover {
+	fill: #3a8b42;
 }
 
+
+.comuna-tres {
+	opacity: 1;
+	fill: #eb1a1a;
+	fill-opacity: 1;
+	stroke: #ffffff;
+	stroke-width: 0.26458332;
+	stroke-opacity: 1;
+}
+.comuna-tres:hover{
+	fill: #faf3f9a4;
+}
+.comuna-tres-number {
+	fill: #115ac2;
+}
+.comuna-tres-number:hover {
+	fill: #3a8b42;
+}tres
 #comuna-cuatro {
 	position: absolute;
 	margin-top: 112px;

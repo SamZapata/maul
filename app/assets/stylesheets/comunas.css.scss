@@ -1,8 +1,5 @@
 //This css is for pisition elements, comunas. The idea is build the map of the city.
 
-#comunas {
-	position: absolute;
-}
 
 .comuna {
 	opacity: 1;
@@ -13,13 +10,18 @@
 	stroke-opacity: 1;
 }
 .comuna:hover{
-	fill: #faf3f9a4;
+	
 }
 .comuna-number {
 	fill: #ffffff;
 }
 .comuna-number:hover {
 	fill: #3a8b42;
+}
+
+
+#comunas {
+	position: absolute;
 }
 
 .comuna-uno {
@@ -33,6 +35,7 @@
 	-webkit-mask-image: url('https://pbs.twimg.com/media/CClDy67W4AA0Le4.jpg');
 	mask-image: url('https://pbs.twimg.com/media/CClDy67W4AA0Le4.jpg');
 }
+
 .comuna-uno:hover{
 	fill: #faf3f9a4;
 }

@@ -423,7 +423,7 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 75px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 h4,
@@ -4062,7 +4062,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: inline-block;
 }
 .breadcrumb > li + li:before {
-  content: "/\00a0";
+  content: "\276D\00a0";
   padding: 0 5px;
   color: #cccccc;
 }

@@ -1,3 +1,8 @@
+/* ======================================== */
+/* Maul Project - Una Ciudad, Una Comunidad */
+/* Autor: Johnny Zapata Serna */
+/* File: style maul css; */
+/* ======================================== */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .bg{
@@ -98,4 +103,11 @@
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+/* Hover main menu */
+.menu-select {
+  border: 2px solid white;
+  border-radius: 25px;
+  border-bottom: 45px;
 }

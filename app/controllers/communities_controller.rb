@@ -1,5 +1,11 @@
+#Maul Project
+#Author: Johnny Zapata Serna @samzapata
+#File: Community controller
+
 class CommunitiesController < ApplicationController
   before_action :set_community, only: [:show, :edit, :update, :destroy]
+
+  layout 'communities/layoutCommunity'
 
   # GET /communities
   # GET /communities.json

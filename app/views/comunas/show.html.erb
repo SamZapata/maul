@@ -1,8 +1,21 @@
+<!-- ======================================== -->
+<!-- Maul Project - Una Ciudad, Una Comunidad -->
+<!-- Author: Johnny Zapata Serna -->
+<!-- File: Comuna show. -->
+<!-- ======================================== -->
 
 <section id="show_comuna">
+	<!-- Breadcrumb navigation -->
+	<div class="container">
+		<ul class="breadcrumb page-header">
+			<li><a href="/"><i class="fa fa-home"></i></a></li>
+			<li><a href="/">Santiago de Cali</a></li>
+			<li><a href="javascript:document.location.reload();"><%= @comuna.name %></a></li>
+		</ul>
+	</div>
 	<div class="container">
 		<a href="javascript:document.location.reload();">
-			<h2 class="page-header" align="center"><%= @comuna.name %></h2>
+			<h2 align="center"><%= @comuna.name %></h2>
 		</a>
 		<div class="well">			
 			<div class="container">
@@ -19,9 +32,6 @@
 							<div id="img_comuna" class="tab-pane fade active in maps-google">
 								<iframe src= <%= @comuna.enlace.gsub(/<iframe src="|" width="600" height="450" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"") %> frameborder="0" style="border:0" allowfullscreen>
 								</iframe>
-								<!--<img class="img-responsive">
-									<%= image_tag @comuna.image.url %>
-								</img>-->
 							</div>
 
 							<div id="comunidades" class="tab-pane fade">
@@ -32,7 +42,7 @@
 											<h4><%= link_to com.name, com %></h4>
 										</div>
 									</div>
-								<% end %>								
+								<% end %>
 
 							</div>
 

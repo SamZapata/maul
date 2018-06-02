@@ -37,12 +37,21 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="container">
-					<h2 class="page-header">Comunidades que aquí se reunen</h2>
-					<% @site.community.each do |com| %>
-						<h4><%= link_to com.name, com %></h4>
-					<% end %>										
+				
+					<div class="container col-lg-6">
+						<h5 class="page-header community-field"><span>Comunidades que aquí se reunen</span></h5>
+						<div class="container">
+							<% @site.community.each do |com| %>
+								<h4><%= link_to com.name, com %></h4>
+							<% end %>
+						</div>
+					</div>
+					<div class="container col-lg-6">
+						<h5 class="page-header event-field">Eventos que aquí se realizan</h5>
+						<% @site.event.each do |com| %>
+							<h4><%= link_to com.name, com %></h4>
+						<% end %>										
+					</div>
 				</div>
 			</div>
 			<%= link_to 'Modiicar', edit_site_path(@site) %> |

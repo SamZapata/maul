@@ -4,6 +4,8 @@ class Community < ActiveRecord::Base
 	belongs_to :site
 	#Se declara la asociación, una comunidad esta referenciada a una comuna
 	belongs_to :comuna
+	#Relationship with one or more topics (work areas)
+	belongs_to :topic
 	
 	include ActiveModel::AttributeAssignment
 	#Declaración para validar los campos obligatorios

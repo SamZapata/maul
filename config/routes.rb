@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   
+  #Routes section presentation project
+  get 'project/index'
+  get 'project/about'
+  get 'project/information'
+  get 'project/terms-of-services'
+
+  resources :topics
   resources :means
   get 'means/_form'
 

@@ -14,6 +14,7 @@
 		<li><a href="/"><i class="fa fa-home"></i></a></li>
 		<li><a href="/communities">Comunidades</a></li>
 		<li><a href="/comunas/<%= @community.comuna.id %>"><%= @community.comuna.name %></a></li>
+		<li><a href="#"><%= @community.name %></a></li>
 	</ul>
 </div>
 
@@ -25,13 +26,13 @@
 					<div class="col-lg-8">
 						<p><strong>Sobre la Comunidad</strong></p>
 						<p> <%= @community.about %> </p>
-						<p> <strong>Contacto: </strong><%= @community.contacto %> </p>
+						<p> <strong>Teléfono: </strong><%= @community.contacto %> </p>
 						<p><strong>Email:</strong> <%= @community.email %> </p>
 						<p><strong>Siguenos: </strong>															
 								<a href= <%= @community.facebook %> ><i class="fa fa-2x fa-facebook-square"></i></a>
 								<a href=<%= @community.twitter %>><i class="fa fa-2x fa-twitter-square"></i></a>
 						</p>
-						<p><strong>¿Donde estamos?</strong> <a href=<%= site_path(:id) %>> <%= @community.site.name %>  (<%= @community.site.adress %>) </p></a>
+						<p><strong>¿Donde estamos?</strong> <a href="/sites/<%=@community.site.id %>"> <%= @community.site.name %>  (<%= @community.site.adress %>) </p></a>
 					</div>
 					<div class="col-lg-4">
 						<div class="thumbnail">

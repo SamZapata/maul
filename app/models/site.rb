@@ -6,6 +6,9 @@ class Site < ActiveRecord::Base
 	#Asociación, un sitio puede estar asociado a una o más comunidades
 	has_many :community
 
+	#Asociación, un sitio puede estar asociado a uno o más eventos
+	has_many :event
+
 	#Se declara la asociación, un sitio esta referenciada a una comuna
 	belongs_to :comuna
 

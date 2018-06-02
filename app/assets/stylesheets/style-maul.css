@@ -105,9 +105,160 @@
   height: 100% !important;
 }
 
-/* Hover main menu select position */
+/* Main Menu */
+.menu-header {
+  font-family: 'Graduate', sans-serif;
+  font-size: 16px;
+  font-color: white;
+  padding-top: 20px;
+}
+
+/* main menu select position */
 .menu-select {
   border: 2px solid white;
   border-radius: 25px;
   border-bottom: 45px;
+}
+
+/* Menu tab show comuna */
+.community-tab {
+  background-color: #115ac2;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.community-tab>span {
+  vertical-align: middle;
+}
+
+.site-tab {
+  background-color: #da412d;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.site-tab>span {
+  vertical-align: middle;
+}
+
+.event-tab {
+  background-color: #3a8b42;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.event-tab>span {
+  vertical-align: middle;
+}
+
+/* Field background communities */
+.community-field {
+  background-color: #115ac2;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.community-field>span {
+  vertical-align: middle;
+}
+
+/* Field background events */
+.event-field {
+  background-color: #3a8b42;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.event-field>span {
+  vertical-align: middle;
+}
+
+/* List show topics in comuna */
+.topics-community {
+  color: #115ac2;
+}
+
+.topics-site {
+  color: white;
+  background-color: #da412d;
+}
+
+.topics-event {
+  background-color: #3a8b42;
+  color: white;
+} 
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #424242;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    color: #717f86;
+    
+}
+.footer a {
+    color: #fff;
+}
+
+.footer .footer-top {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+.footer .widget-title, .footer .widget-title a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #999;
+}
+.footer .widget-title {
+    padding-bottom: 20px;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 44px;
+    color: #FFB03B;
+}
+.footer .widget, .footer address {
+    color: #999;
+    text-transform: none;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+.footer .navigation, .footer .social-list {
+    float: none;
+    margin-bottom: 20px;
+}
+
+/* Text footer */
+.footer-text { 
+  padding-bottom: 9px;
+  padding-top: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* Icons social media Footer */
+.social-footer [class*="fa fa-"] {
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  line-height: 30px;
+  margin: auto 3px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.social-footer [class*="fa fa-"]:hover {
+  background-color: red;
 }

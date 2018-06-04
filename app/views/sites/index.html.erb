@@ -9,8 +9,8 @@
   <div class="container">
     <ul class="breadcrumb page-header">
       <li><a href="/"><i class="fa fa-home"></i></a></li>
-      <li><a href="/sites">Sitios</a></li>
       <li><a href="/">Santiago de Cali</a></li>
+      <li><a href="/sites">Sitios</a></li>
     </ul>
   </div>
 
@@ -34,6 +34,21 @@
 
       <div class="container">
         <div id="TabContent" class="tab-content">
+
+          <!-- === Content all sites === -->
+            <div id="index-sites" class="tab-pane fade active in">
+              <h4 class="">Todos los sitios registrados en Maul Project</h4>
+              <% Site.all.collect do |sit| %>
+                <div class="thumbnail col-lg-3 col-md-3">
+                  <img class="img-responsive">
+                  <%= link_to image_tag(sit.avatar.url, :width=>200, :heigth=>200), sit %>
+                  <div class="caption">
+                    <%= link_to sit.name, sit %>
+                  </div>
+                </div>
+              <% end -%>
+            </div>
+
           <% Comuna.all.collect do |com| %>
             <div class="tab-pane fade" id="comuna<%= com.id %>">
               <% Site.all.collect do |sit| %>

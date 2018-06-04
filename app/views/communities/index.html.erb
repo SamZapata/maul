@@ -4,8 +4,17 @@
 <!-- Archvio: Tabla de presentación de las comunidades -->
 <!-- ======================================== -->
 
+<!-- Breadcrumb navigation -->
+  <div class="container">
+    <ul class="breadcrumb page-header">
+      <li><a href="/"><i class="fa fa-home"></i></a></li>
+      <li><a href="/">Santiago de Cali</a></li>
+      <li><a href="/communities">Comunidades</a></li>
+    </ul>
+  </div>
+
 <div class="container" align="center">
-  <h2 class="page-header" align="center">Comunidades</h2>
+  <h2 align="center">Comunidades</h2>
   <%= link_to 'Registrar Una Comunidad', new_community_path %>
 
     <!-- === Tab communities by comuna === -->
@@ -20,8 +29,26 @@
         </div>
         </div>
 
+        <!-- === Tab content === -->
         <div class="container">
           <div id="TabContent" class="tab-content">
+
+            <!-- === Content all communities === -->
+            <div id="index-community" class="tab-pane fade active in">
+            <h4 class="">Todas las comunidades registradas en Maul Project</h4>
+              <% Community.all.collect do |com| %>
+                <div class="thumbnail col-lg-3 col-md-3">
+                  <img class="img-responsive">
+                    <%= link_to image_tag(com.avatar.url, :width=>200, :heigth=>200), com %>
+                  <div class="caption">
+                    <%= link_to com.name, com %>
+                  </div>
+                </div>
+              <% end -%>
+            </div>
+
+
+            <!-- === Content communities by comuna === -->
             <% Comuna.all.collect do |com| %>
               <div class="tab-pane fade" id="comuna<%= com.id %>">
                 <% Community.all.collect do |c| %>

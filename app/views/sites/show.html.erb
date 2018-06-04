@@ -43,7 +43,7 @@
 						<h5 class="page-header community-field"><span>Comunidades que aquí se reunen</span></h5>
 						<div class="container">
 							<% @site.community.each do |com| %>
-								<h4><%= link_to com.name, com %></h4>
+								<h6 class="topics-community"><span><%= link_to com.name, com %></span></h6>
 							<% end %>
 						</div>
 					</div>
@@ -61,4 +61,3 @@
 </section>
 
 <p id="notice"><%= notice %></p>
-

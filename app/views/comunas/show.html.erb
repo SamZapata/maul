@@ -113,42 +113,36 @@
 
 							<!-- === Events by comuna and categories === -->
 							<div id="eventos" class="tab-pane fade">
+								
 								<!-- Tab Topics -->
 								<div class="thumbnail">
-								<div id="subTab" class="btn-group" data-toogle="buttons-radio">
-									<a href="#e-deportes" class="btn active" data-toggle="tab"><span class="topics-event">Deportes</span></a>
-									<a href="#cultura" class="btn" data-toggle="tab"><span class="topics-event">Cultura</span></a>
-									<a href="#e-educacion" class="btn" data-toggle="tab"><span class="topics-event">Educación</span></a>
-									<a href="#tecnologia" class="btn" data-toggle="tab"><span class="topics-event">Tecnología</span></a>
-									<a href="#musica" class="btn" data-toggle="tab"><span class="topics-event">Música</span></a>
-									<a href="#comercio" class="btn" data-toggle="tab"><span class="topics-event">Comercio</span></a>
+								<div id="subTab3" class="btn-group" data-toogle="buttons-radio">
+									<% Topic.all.collect do |top| %>
+										<a href="#tipo<%= top.id %>" class="btn active" data-toggle="tab">
+											<span class="topics-event"><%= top.name %></span>
+										</a>
+									<% end -%>
 								</div>
 								</div>
-
+									
 								<!-- Content Tab Topics - Show select topic -->
 								<div class="tab-content">
-									<div class="tab-pane" id="e-deportes">
-										<p align="left">Eventos Deportivos</p>
-										<% @comuna.community.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
-												</div>
-											</div>
-										<% end -%>
-									</div>
-									<div id="e-educacion" class="tab-pane">
-										<p align="left">Eventos de Educación</p>
-										<% @comuna.community.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
-												</div>
-											</div>
-										<% end -%>
-									</div>
+									<% Topic.all.collect do |top| %>
+										<div class="tab-pane" id="tipo<%=top.id%>">
+											<% @comuna.sites.each do |sit| %>
+											<% Event.all.collect do |eve| %>
+												<% if eve.site_id === sit.id && eve.topic_id === top.id%>
+													<div class="col-lg-2">
+													<div class="thumbnail">
+														<span class="topics-event"><%= link_to eve.name, eve %></span>
+														</div>
+													</div>
+												<% end %>	
+											<% end -%>
+											<% end -%>
+										</div>
+									<% end -%>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -156,7 +150,7 @@
 			</div>
 
 		
-			<!-- Descripción de cada comuna -->
+			<!-- === About comuna === -->
 			<div class="col-lg-12">
 				<h3 class="page-header">Sobre la Comuna</h3>
 				<p> <%= @comuna.about %> </p>

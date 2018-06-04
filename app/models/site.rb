@@ -15,6 +15,7 @@ class Site < ActiveRecord::Base
 	#Relationship with one or more categories 
 	belongs_to :category
 
+	#stored the images with cloudinary
 	has_attached_file :avatar, 
 	:storage => :cloudinary,
 	:path => ':id/:style/:filename',

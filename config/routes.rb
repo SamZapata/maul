@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :categories
   #Routes section presentation project
   get 'project/index'
   get 'project/about'

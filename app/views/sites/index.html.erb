@@ -18,34 +18,42 @@
 <div class="container" align="center">
 
   <h2 align="center">Sitios</h2>
+  <%= link_to 'Registrar Un Sitio', new_site_path %>
   
-    <%= link_to 'Registrar Un Sitio', new_site_path %>
-    <table class="table table-responsive">
-      <thead>
-        <tr>           
+  <!-- === Tab sites by comuna === -->
+    <div class="container">
+      <div class="thumbnail">
+      <div id="subTab" class="btn-group" data-toogle="buttons-radio">
+        <% Comuna.all.collect do |com| %>
+          <a href="#comuna<%= com.id %>" class="btn active" data-toggle="tab">
+            <span class="topics-site"><%= com.name %></span>
+          </a>
+        <% end -%>
+      </div>
+      </div>
 
-        </tr>
-      </thead>
+      <div class="container">
+        <div id="TabContent" class="tab-content">
+          <% Comuna.all.collect do |com| %>
+            <div class="tab-pane fade" id="comuna<%= com.id %>">
+              <% Site.all.collect do |sit| %>
+                <% if com.id === sit.id %>
+                  <div class="thumbnail col-lg-3 col-md-3">
+                    <img class="img-responsive">
+                    <%= link_to image_tag(sit.avatar.url, :width=>200, :heigth=>200), sit %>
+                    <div class="caption">
+                      <%= link_to sit.name, sit %>
+                    </div>
+                  </div>
+                <% end %>
+              <% end -%>
+            </div>
+          <% end -%>
+        </div>
+      </div>
 
-      <tbody>                
-          <div class="col-lg-12">
-          <% @sites.each do |site| %>            
-            <tr>
-              <div class="col-md-3">
-              <div class="thumbnail">
-                <img class="img-responsive">
-                <%= link_to image_tag(site.avatar.url, :width=>200, :heigth=>200), site %>
-                <div class="caption">
-                  <%= link_to site.name, site %>
-                </div>
-              </div> 
-              </div>              
-            </tr>
-          </div>
-          <% end %>
-      </tbody>
-    </table>  
-  <br>  
+    </div>
+
 </div>
-</section>
+
 <p id="notice"><%= notice %></p>

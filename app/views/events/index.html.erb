@@ -16,7 +16,9 @@
 
 <!-- Index events -->
 <div class="container" align="center">
-  <h2 align="center">Eventos</h2>  
+  <h2 align="center">Eventos</h2>
+  <%= link_to 'Crear Un Evento', new_event_path %>
+  
   <table>
     <thead>
       <tr>
@@ -48,8 +50,6 @@
         
     </tbody>
   </table>
-  
-  <%= link_to 'Crear Un Evento', new_event_path %>
 
   <!--
   <% if user_signed_in? %>

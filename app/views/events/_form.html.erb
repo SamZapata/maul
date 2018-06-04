@@ -12,27 +12,44 @@
       </div>
     <% end %>
 
-    <div class="field">
+    <div class="field" align="left">
+      <%= f.label :Nombre_del_Evento %>
       <%= f.text_field :name, placeholder: 'Nombre del Evento' %>      
     </div>
 
-    <div class="field">      
+    <div class="field" align="left">
+      <%= f.label :Descripción %>
       <%= f.text_area :about, placeholder: 'Descripción del Evento' %>
     </div>
 
-    <div class="field">
-      <%= f.label :Fecha %>
-      <%= f.date_select :fecha %>
+    <p align="left">Selecciona el tipo de evento que realizarás</p>
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :Tipo_de_Evento %>
+        <%= f.select(:topic_id, Topic.all.collect {|a| [a.name, a.id]},{prompt: 'seleccionar'},{} )%>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :hora %>
-      <%= f.time_select :hora %>
+    <p>Escoge la fecha y hora de realización del evento</p>
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :Fecha %>
+        <%= f.date_select :fecha %>
+      </div>
+
+      <div class="field">
+        <%= f.label :Hora %>
+        <%= f.time_select :hora %>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :sitio %>      
-      <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
+    <p >¿El lugar donde se realizará el evento ya se encuentra registrado en Maul Project?</p>
+
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :sitio %>
+        <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
+      </div>
     </div>
 
     <!--<div class="field">
@@ -40,6 +57,7 @@
       <%= f.text_field :estado %>
     </div>-->
 
+    <p align="left">Añade una imagen a tu evento</p>
     <div class="field">
       <%= f.file_field :image %>
       <% if @event.image%>

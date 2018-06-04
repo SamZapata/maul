@@ -181,16 +181,20 @@
 /* List show topics in comuna */
 .topics-community {
   color: #115ac2;
+  font-size: 16px;
+  text-align: left;
 }
 
 .topics-site {
-  color: white;
-  background-color: #da412d;
+  color: #da412d;
+  font-size: 16px;
+  text-align: left;
 }
 
 .topics-event {
-  background-color: #3a8b42;
-  color: white;
+  color: #3a8b42;
+  font-size: 16px;
+  text-align: left;
 } 
 
 

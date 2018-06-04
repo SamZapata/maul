@@ -7,9 +7,7 @@
 <section id="register_community">
 	<div class="container">
 		<% if user_signed_in? %>
-			<nav class="navbar navbar-inverse-sub navbar-stactic-sub">  
-				<h2 class="page-header" align="center">Registra Tu Comunidad</h2>
-			</nav>
+			<h2 class="page-header" align="center">Registra Tu Comunidad</h2>
 			
 			<%= render 'form', community: @community %>
 		<% else %>

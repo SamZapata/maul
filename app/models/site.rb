@@ -12,6 +12,9 @@ class Site < ActiveRecord::Base
 	#Se declara la asociación, un sitio esta referenciada a una comuna
 	belongs_to :comuna
 
+	#Relationship with one or more categories 
+	belongs_to :category
+
 	has_attached_file :avatar, 
 	:storage => :cloudinary,
 	:path => ':id/:style/:filename',

@@ -1,4 +1,4 @@
-class SiteCategory < ActiveRecord::Base
+class Category < ActiveRecord::Base
 	
 	#Relationship site
 	has_many :site

@@ -49,18 +49,21 @@
       <%= f.text_field :twitter, placeholder: 'Perfil Twitter' %>
     </div>
 
-    <p align="left">Selecciona un campo de acción</p>
-    <div class="field" align="left">
-      <%= f.label :Área %>
-      <%= f.select(:topic_id, Topic.all.collect {|a| [a.name, a.id]},{prompt: 'Seleccionar'},{} )%>
+    <p>Selecciona un campo de acción</p>
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :Área %>
+        <%= f.select(:topic_id, Topic.all.collect {|a| [a.name, a.id]},{prompt: 'Seleccionar'},{} )%>
+      </div>
     </div>
 
-    <p align="left">¿El lugar donde se reune tu comunidad ya esta registrado en Maul?</p>
-
-    <div class="field" align="left">
-      <%= f.label :Sitio %>
-      <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
-      <!--<%= f.text_field :site_id %>-->
+    <p>¿El lugar donde se reune tu comunidad ya esta registrado en Maul?</p>
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :Sitio %>
+        <%= f.select(:site_id, Site.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione un sitio'},{} )%>
+        <!--<%= f.text_field :site_id %>-->
+      </div>
     </div>
 
     <p align="left">Agrega una imagen que identifique tu comunidad</p>

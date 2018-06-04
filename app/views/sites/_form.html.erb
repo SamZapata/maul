@@ -40,6 +40,7 @@
       <%= f.text_field :phone, placeholder: 'Teléfono' %>
     </div>
 
+    <p align="left">Agrega un mapa embebido de Google Maps</p>
     <div class="field">
       <div class="text-left">
         <%= f.label :Goole_Map %>
@@ -47,11 +48,20 @@
       <%= f.text_field :mapgoogle, placeholder: 'mapa embebido de google' %>
     </div>
 
-    <div class="field">
-      <%= f.label :Comuna %>
-      <%= f.select(:comuna_id, Comuna.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione una comuna'},{} )%>      
+    <p>Selecciona una categoría y una comuna</p>
+    <div class="thumbnail">
+      <div class="field">
+        <%= f.label :Categoría %>
+        <%= f.select(:category_id, Category.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione una Categoría'},{} )%>
+      </div>
+
+      <div class="field">
+        <%= f.label :Comuna %>
+        <%= f.select(:comuna_id, Comuna.all.collect {|a| [a.name, a.id]},{prompt: 'seleccione una comuna'},{} )%>
+      </div>
     </div>
 
+    <p>Añade una imagen que identifique el lugar</p>
     <div class="field">
       <div class="text-left">
         <%= f.label :Imagen %>

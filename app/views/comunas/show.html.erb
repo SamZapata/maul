@@ -45,102 +45,73 @@
 								</div>
 							</div>
 
-							<!-- Communities by comuna -->
+							<!-- === Communities by comuna and topics === -->
 							<div id="comunidades" class="tab-pane fade">
 								
 								<!-- Tab Topics -->
 								<div class="thumbnail">
 								<div id="subTab" class="btn-group" data-toogle="buttons-radio">
-									<a href="#deportes" class="btn active" data-toggle="tab"><span class="topics-community">Deportes</span></a>
-									<a href="#cultura" class="btn" data-toggle="tab"><span class="topics-community">Cultura</span></a>
-									<a href="#educacion" class="btn" data-toggle="tab"><span class="topics-community">Educación</span></a>
-									<a href="#tecnologia" class="btn" data-toggle="tab"><span class="topics-community">Tecnología</span></a>
-									<a href="#musica" class="btn" data-toggle="tab"><span class="topics-community">Música</span></a>
-									<a href="#comercio" class="btn" data-toggle="tab"><span class="topics-community">Comercio</span></a>
+									<% Topic.all.collect do |top| %>
+										<a href="#topic<%= top.id %>" class="btn active" data-toggle="tab">
+											<span class="topics-community"><%= top.name %></span>
+										</a>
+									<% end -%>
 								</div>
 								</div>
 									
 								<!-- Content Tab Topics - Show select topic -->
 								<div class="tab-content">
-									<div class="tab-pane" id="deportes">
-										<p align="left">Comunidades que hacen deporte</p>
-										<% @comuna.community.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
+									<% Topic.all.collect do |top| %>
+										<div class="tab-pane" id="topic<%=top.id%>">
+											<% @comuna.community.each do |com| %>
+											<% if top.id === com.topic_id %>
+												<div class="col-lg-2">
+													<div class="thumbnail">
+														<span class="topics-community"><%= link_to com.name, com %></span>
+													</div>
 												</div>
-											</div>
+											<% end %>
 										<% end -%>
-									</div>
-									<div id="educacion" class="tab-pane">
-										<p align="left">Comunidades Educativas</p>
-										<% @comuna.community.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
-												</div>
-											</div>
-										<% end -%>
-									</div>
+										</div>
+									<% end -%>
 								</div>
 							</div>
 								
 
-							<!-- Sites by comuna -->
+							<!-- === Sites by comuna and categories === -->
 							<div id="sitios" class="tab-pane fade">
 
-								<!-- Tab Topics -->
+								<!-- Tab Categories -->
 								<div class="thumbnail">
-								<div id="subTab" class="btn-group" data-toogle="buttons-radio">
-									<a href="#escenariosDpts" class="btn active" data-toggle="tab"><span class="topics-site">Escenarios Deportivos</span></a>
-									<a href="#bibliotecas" class="btn" data-toggle="tab"><span class="topics-site">Bibliotecas</span></a>
-									<a href="#colegios" class="btn" data-toggle="tab"><span class="topics-site">Colegios</span></a>
-									<a href="#universidades" class="btn" data-toggle="tab"><span class="topics-site">Universidades</span></a>
-									<a href="#fundaciones" class="btn" data-toggle="tab"><span class="topics-site">Fundaciones</span></a>
-									<a href="#tiendas" class="btn" data-toggle="tab"><span class="topics-site">Tiendas</span></a>
-									<a href="#farmacias" class="btn" data-toggle="tab"><span class="topics-site">Farmacias</span></a>
-									<a href="#iglesias" class="btn" data-toggle="tab"><span class="topics-site">Iglesias</span></a>
-									<a href="#parques" class="btn" data-toggle="tab"><span class="topics-site">Parques</span></a>
-									<a href="#empresas" class="btn" data-toggle="tab"><span class="topics-site">Empresas</span></a>
+								<div id="subTab2" class="btn-group" data-toogle="buttons-radio">
+									<% Category.all.collect do |cat| %>
+										<a href="#categoria<%= cat.id %>" class="btn active" data-toggle="tab">
+											<span class="topics-site"><%= cat.name %></span>
+										</a>
+									<% end -%>
 								</div>
 								</div>
+
 								<!-- Content Tab Topics - Show select topic -->
 								<div class="tab-content">
-									<div class="tab-pane" id="escenariosDpts">
-										<p align="left">Sitios Deportivos</p>
-										<% @comuna.sites.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
+									<% Category.all.collect do |cat| %>
+										<div class="tab-pane" id="categoria<%=cat.id%>">
+											<% @comuna.sites.each do |sit| %>
+											<% if cat.id === sit.category_id %>
+												<div class="col-lg-2">
+													<div class="thumbnail">
+														<span class="topics-site">
+														<%= link_to sit.name, sit %></span>
+													</div>
 												</div>
-											</div>
+											<% end %>
 										<% end -%>
-									</div>
-									<div id="colegios" class="tab-pane">
-										<p align="left">Escuelas y Colegios</p>
-										<% @comuna.sites.each do |com| %>
-											<div class="col-lg-2">
-												<div class="thumbnail">
-													<h4><%= link_to com.name, com %></h4>
-												</div>
-											</div>
-										<% end -%>
-									</div>
+										</div>
+									<% end -%>
 								</div>
-								
-								<!-- Test add map by comuna -->
-								<div class="row col-lg-11">
-								<!-- Map comunas de Cali -->
-								<br>
-								<div id="img_comuna" class="maps-google">
-									<iframe src= <%= @comuna.enlace.gsub(/<iframe src="|" width="600" height="450" frameborder="0" style="border:0" allowfullscreen><|iframe>/,"") %> frameborder="0" style="border:0" allowfullscreen>
-									</iframe>
-								</div>
-								</div>
-
 							</div>
 
-							<!-- Events by comuna -->
+							<!-- === Events by comuna and categories === -->
 							<div id="eventos" class="tab-pane fade">
 								<!-- Tab Topics -->
 								<div class="thumbnail">

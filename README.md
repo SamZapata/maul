@@ -2,13 +2,7 @@
 
 ## Resumen
 
-El sistema de información comunitario,*Maul Project*, es el producto del proceso de investigación y desarrollo en el proyecto de grado titulado “Desarrollo de un sistema de información comunitario con las comunas 13, 14 y 21 de Santiago de Cali” de la facultad de ingeniería de la Universidad Santiago de Cali. El cual busca familiarizar y referenciar a las personas, comunidades, sitios y eventos que se realizan al interior de cada comuna de la ciudad. Para la primera fase de desarrollo, es decir, esta primer etapa solo se realiza un acercamiento con algunas comunidades y sitios de las comunas mencionadas en el título del proyecto para recoger las primeras impresiones y realizar las primeras pruebas de uso. Posteriormente, en una siguiente fase de despliegue, se pretende involucrar al resto de comunas de la ciudad, corregimientos, organizaciones, instituciones, comunidades y sitios que permitan nutrir el sitio y ofrecer una información oportuna, fidedigna y actualizada al servicio de toda una población, además de las personas visitantes que arriban a la ciudad.
-
-A continuación se describen los aspectos generales que permiten entender
-como se espera que funcione la plataforma, con una estructura de funcionamiento clara y
-cuáles son los requerimientos necesarios para correr la aplicación de manera local y contar con
-la posibilidad de hacer mejoras en la usabilidad e implementación del proyecto por parte de
-los mismos usuarios o bien colaboradores.
+El sistema de información comunitario, *Maul Project*, es el producto del proceso de investigación y desarrollo en el proyecto de grado titulado “Desarrollo de un sistema de información comunitario con las comunas 13, 14 y 21 de Santiago de Cali” del programa Ingeniería de Sistemas de la facultad de ingeniería de la Universidad Santiago de Cali. El cual busca familiarizar y referenciar a los usuarios con las comunidades, sitios y eventos que se realizan al interior de cada comuna de la ciudad, teniendo en cuenta la posibilidad de escalar e incluir corregimientos y otros lugares de la región. Es una iniciativa que busca integrar todas las dinámicas que surgen de las diferentes comunidades, organizaciones, instituciones y personas en un lugar que permita mostrar al mundo entero como se construye y se desarrolla nuestra sociedad, desde los diversos campos de acción con los que interactuamos los seres humanos día a día, es decir, a través de un sistema de información web  brindar información real y actualizada sobre las comunidades, sitios y eventos (o dinámicas) según una comuna determinada. 
 
 ## Tabla de Contenido
 - [Sobre el Proyecto](#sobre-el-proyecto).
@@ -26,6 +20,31 @@ Una maul es una estructura en la que participan diversos actores para lograr un 
 Bajo este principio solidario que plantea la consecución de objetivos a partir del apoyo colectivo, se plantea el desarrollo de la aplicación MAUL como plataforma de servicios.
 
 Maul Project es una plataforma de servicio en la que los usuarios y colaboradores encontrarán información relevante sobre las comunidades, personas líderes, sitios (organizaciones, instituciones, empresas, escenarios, etc) y eventos; dichos eventos podrán contar con la posibilidad de que a través de un módulo de gestión de recursos, se puedan conseguir o disponer de insumos, herramientas o los medios necesarios para la realización del evento planteado, donde otros usuarios podrán ser los colaboradores o quienes apoyen las iniciativas.
+
+Maul Project es una plataforma abierta y colaborativa que para esta primera fase permite:
+
+**Registro de usuarios**
+Los *usuarios* son todas las personas que visitan o se registran en la aplicación. Para crear una cuenta basta con ingresar datos como correo electrónico y una contraseña. Todos los usuarios que se registran cuentan con otras funcionalidades dentro del sistema como crear comunidades, sitios o eventos.
+
+**Gestión de comunidades**
+Según el autor Natalio Kisnerman señala que “el concepto de comunidad proviene del latín communis, que significa hombres conviviendo juntos en un espacio, compartiendo algo, convivencia, comunicación, unidad. Por lo tanto, podemos en principio decir que es un sistema de relaciones sociales en un espacio definido, integrado con base en intereses y necesidades compartidas. […] lo que permite concluir que la comunidad es algo más que un área geográfica delimitada.” 
+Basado en el anterior concepto y extrapolándolo al espacio virtual, para *maul project* una comunidad reunirá a los diferentes grupos sociales sin discriminar su áreas afines.
+
+*Por ejemplo*, una comunidad podría ser un equipo deportivo, un grupo cultural, un grupo de investigación, los empleados de una organización, los estudiantes de una universidad o colegio y hasta el grupo de usuarios que frecuentan una tienda o supermercado. Como se puede apreciar las temáticas o campos de acción son diversos y pueden ser más específicos.
+*¿Qué esperas para registrar la comunidad de la que sos parte?*
+
+**Gestión de sitios**
+Los sitios son lugares que existen en alguna comuna y en ellos se reúnen una o más comunidades. 
+*por ejemplo*, Escenarios deportivos y recreativos, universidades, colegios, instituciones, empresas, tiendas o supermercados.
+
+**Gestión de eventos**
+Los eventos son acciones que emprenden las personas, comunidades o sitios. Para registrar un evento es necesario indicar el *sitio* donde se realizará además de los datos complementarios que ofrezcan una información completa y detallada.
+
+**Gestión de recursos**
+Realizar un evento implica disponer de unos recursos mínimos para lograr con éxito el propósito del evento. Maul Project busca ser una plataforma que  integra sistemas de transacción y de gestión los recursos que se indiquen. Este módulo espera ser implementado en una segunda fase.
+
+**Conocer la ciudad**
+Al reunir toda la información antes mencionada, se puede ofrecer una guía informativa y actualizada sobre lo que sucede en nuestra ciudad.
 
 ### Objetivos
 

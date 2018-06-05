@@ -10,7 +10,7 @@
   background-size: cover;
   align-content: center;
   background-repeat: no-repeat;
-  background-color: #e0e0e0;  
+  background-color: #e0e0e0;
 }
 
 .login-page {
@@ -111,6 +111,25 @@
   font-size: 16px;
   font-color: white;
   padding-top: 20px;
+}
+
+/* === Titles and subtitles === */
+.title-text { 
+  padding-bottom: 9px;
+  padding-top: 5px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* subtitles */
+.subtitle-text { 
+  padding-bottom: 3px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+/* read text */
+.p-text { 
+  
 }
 
 /* main menu select position */
@@ -243,6 +262,7 @@
 
 /* Text footer */
 .footer-text { 
+  color: white;
   padding-bottom: 9px;
   padding-top: 20px;
   border-bottom: 1px solid #f7f7f7;

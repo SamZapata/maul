@@ -1,49 +1,0 @@
-{:uriI"ˆfile://app/assets/chart-master/samples/polarArea.html?type=text/html&id=42cbaeb3264792f5012c9dcc6fda17eefc1090caf86645c094116c0abdd366c7:ET:load_pathI"app/assets/chart-master;T:filenameI"3app/assets/chart-master/samples/polarArea.html;T:	nameI"samples/polarArea;T:logical_pathI"samples/polarArea.html;T:content_typeI"text/html;T:sourceI"<!doctype html>
-<html>
-	<head>
-		<title>Polar Area Chart</title>
-		<script src="../Chart.js"></script>
-		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
-		<style>
-		</style>
-	</head>
-	<body>
-		<canvas id="canvas" height="400" width="400"></canvas>
-
-
-	<script>
-	var chartData = [
-			{
-				value : Math.random(),
-				color: "#D97041"
-			},
-			{
-				value : Math.random(),
-				color: "#C7604C"
-			},
-			{
-				value : Math.random(),
-				color: "#21323D"
-			},
-			{
-				value : Math.random(),
-				color: "#9D9B7F"
-			},
-			{
-				value : Math.random(),
-				color: "#7D4F6D"
-			},
-			{
-				value : Math.random(),
-				color: "#584A5E"
-			}
-		];
-	var myPolarArea = new Chart(document.getElementById("canvas").getContext("2d")).PolarArea(chartData);
-	</script>
-	</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Afile-digest://app/assets/chart-master/samples/polarArea.html;TTF:charsetI"
-utf-8;F:digest"%U7€7jfoƒ˜l¦aûÎÙÁG7ˆÐ:`û%«¬€·/l:lengthi:dependencies_digest"%o¿­Îí¦qÙ“DœŒiËy@J~ÍØ|eÌr2 »wŒ¼:idI"E42cbaeb3264792f5012c9dcc6fda17eefc1090caf86645c094116c0abdd366c7;F:
-mtimel+b„X

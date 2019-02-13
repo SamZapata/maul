@@ -1,3 +1,15 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo {
+}
+.logo:hover {
+  background-color: transparent !important;
+  filter: invert(2) sepia(1) saturate(5) hue-rotate(880.0deg);
+}
+
+.social-icon:hover {
+  background-color: transparent !important;
+  color: black;
+}

@@ -1,61 +1,0 @@
-{:uriI"‹file://app/assets/jquery-file-upload/package.json?type=application/json&id=e5ebb8b849dad8300d784c3ba398f2eb2b0acadee72775706c3fb52915c12025:ET:load_pathI""app/assets/jquery-file-upload;T:filenameI"/app/assets/jquery-file-upload/package.json;T:	nameI"package;T:logical_pathI"package.json;T:content_typeI"application/json;T:sourceI"n{
-    "name": "blueimp-file-upload",
-    "version": "7.2.1",
-    "title": "jQuery File Upload",
-    "description": "File Upload widget with multiple file selection, drag&drop support, progress bars and preview images for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing. Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.",
-    "keywords": [
-        "jquery",
-        "file",
-        "upload",
-        "widget",
-        "multiple",
-        "selection",
-        "drag",
-        "drop",
-        "progress",
-        "preview",
-        "cross-domain",
-        "cross-site",
-        "chunk",
-        "resume",
-        "gae",
-        "go",
-        "python",
-        "php",
-        "bootstrap"
-    ],
-    "homepage": "https://github.com/blueimp/jQuery-File-Upload",
-    "author": {
-        "name": "Sebastian Tschan",
-        "url": "https://blueimp.net"
-    },
-    "maintainers": [
-        {
-            "name": "Sebastian Tschan",
-            "url": "https://blueimp.net"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/blueimp/jQuery-File-Upload.git"
-    },
-    "bugs": "https://github.com/blueimp/jQuery-File-Upload/issues",
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
-        }
-    ],
-    "dependencies": {
-        "jquery": ">=1.6",
-        "jquery.ui.widget": ">=1.8",
-        "blueimp-tmpl": ">=2.1.0",
-        "blueimp-load-image": ">=1.2.3",
-        "blueimp-canvas-to-blob": ">=2.0.5"
-    }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"=file-digest://app/assets/jquery-file-upload/package.json;TTF:charsetI"
-utf-8;F:digest"%YÉ!&ÏgÔ¨†Ö2;%âÓàgz‰4E”¦=ƒEË´•èÚ:lengthin:dependencies_digest"%?÷ÍT*|"÷eÎgë¹ú×*Ä‚ökMBÍ÷#|Ì:idI"Ee5ebb8b849dad8300d784c3ba398f2eb2b0acadee72775706c3fb52915c12025;F:
-mtimel+b„X

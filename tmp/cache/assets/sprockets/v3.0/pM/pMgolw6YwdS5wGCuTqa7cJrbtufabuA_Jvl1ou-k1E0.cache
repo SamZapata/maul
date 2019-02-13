@@ -1,66 +1,0 @@
-{:uriI"Åfile://app/assets/fullcalendar/demos/json.html?type=text/html&id=d8be2e8c48a9922af07a9d2e5a9b52d7e7119651e25315f2540127c3476d6aa0:ET:load_pathI"app/assets/fullcalendar;T:filenameI",app/assets/fullcalendar/demos/json.html;T:	nameI"demos/json;T:logical_pathI"demos/json.html;T:content_typeI"text/html;T:sourceI"√<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-<link rel='stylesheet' type='text/css' href='../fullcalendar/fullcalendar.css' />
-<link rel='stylesheet' type='text/css' href='../fullcalendar/fullcalendar.print.css' media='print' />
-<script type='text/javascript' src='../jquery/jquery-1.8.1.min.js'></script>
-<script type='text/javascript' src='../jquery/jquery-ui-1.8.23.custom.min.js'></script>
-<script type='text/javascript' src='../fullcalendar/fullcalendar.min.js'></script>
-<script type='text/javascript'>
-
-	$(document).ready(function() {
-	
-		$('#calendar').fullCalendar({
-		
-			editable: true,
-			
-			events: "json-events.php",
-			
-			eventDrop: function(event, delta) {
-				alert(event.title + ' was moved ' + delta + ' days\n' +
-					'(should probably update your database)');
-			},
-			
-			loading: function(bool) {
-				if (bool) $('#loading').show();
-				else $('#loading').hide();
-			}
-			
-		});
-		
-	});
-
-</script>
-<style type='text/css'>
-
-	body {
-		margin-top: 40px;
-		text-align: center;
-		font-size: 14px;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		}
-		
-	#loading {
-		position: absolute;
-		top: 5px;
-		right: 5px;
-		}
-
-	#calendar {
-		width: 900px;
-		margin: 0 auto;
-		}
-
-</style>
-</head>
-<body>
-<div id='loading' style='display:none'>loading...</div>
-<div id='calendar'></div>
-<p>json-events.php needs to be running in the same directory.</p>
-</body>
-</html>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI":file-digest://app/assets/fullcalendar/demos/json.html;TTF:charsetI"
-utf-8;F:digest"%_î7^iûÙî*û÷µ‹øy˙VKSJ¨f‰›¸pº†¢:lengthi√:dependencies_digest"%0-™ç~Õi;ÌÈÊ·IhÚz4˘‹Am¿˛∫+¨%¯©:idI"Ed8be2e8c48a9922af07a9d2e5a9b52d7e7119651e25315f2540127c3476d6aa0;F:
-mtimel+bÑX

@@ -17,7 +17,7 @@
 		<a href="javascript:document.location.reload();">
 			<h2 align="center"><%= @comuna.name %></h2>
 		</a>
-		<div class="well">			
+		<div class="well">
 			<div class="container">
 				<div class="col-lg-2">
 					<div class="community-tab">
@@ -36,7 +36,7 @@
 						<!-- Tab Content para mostrar un objeto {comunidad, sitio, evento} de cada comuna -->
 
 						<div id="TabContent" class="tab-content">
-							
+
 							<!-- Map comunas de Cali -->
 							<div id="img_comuna" class="tab-pane fade active in maps-google">
 								<div class="thumbnail">
@@ -47,7 +47,7 @@
 
 							<!-- === Communities by comuna and topics === -->
 							<div id="comunidades" class="tab-pane fade">
-								
+
 								<!-- Tab Topics -->
 								<div class="thumbnail">
 								<div id="subTab" class="btn-group" data-toogle="buttons-radio">
@@ -58,7 +58,7 @@
 									<% end -%>
 								</div>
 								</div>
-									
+
 								<!-- Content Tab Topics - Show select topic -->
 								<div class="tab-content">
 									<% Topic.all.collect do |top| %>
@@ -76,7 +76,7 @@
 									<% end -%>
 								</div>
 							</div>
-								
+
 
 							<!-- === Sites by comuna and categories === -->
 							<div id="sitios" class="tab-pane fade">
@@ -113,7 +113,7 @@
 
 							<!-- === Events by comuna and categories === -->
 							<div id="eventos" class="tab-pane fade">
-								
+
 								<!-- Tab Topics -->
 								<div class="thumbnail">
 								<div id="subTab3" class="btn-group" data-toogle="buttons-radio">
@@ -124,7 +124,7 @@
 									<% end -%>
 								</div>
 								</div>
-									
+
 								<!-- Content Tab Topics - Show select topic -->
 								<div class="tab-content">
 									<% Topic.all.collect do |top| %>
@@ -137,7 +137,7 @@
 														<span class="topics-event"><%= link_to eve.name, eve %></span>
 														</div>
 													</div>
-												<% end %>	
+												<% end %>
 											<% end -%>
 											<% end -%>
 										</div>
@@ -149,16 +149,14 @@
 				</div>
 			</div>
 
-		
+
 			<!-- === About comuna === -->
 			<div class="col-lg-12">
 				<h3 class="page-header">Sobre la Comuna</h3>
 				<p> <%= @comuna.about %> </p>
 			</div>
-						
+
 		</div>
-		<%= link_to 'Edit', edit_comuna_path(@comuna) %> |
-		<%= link_to 'Back', comunas_path %>
 	</div>
 </section>
 <p id="notice"><%= notice %></p>

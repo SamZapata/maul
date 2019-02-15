@@ -14,11 +14,12 @@ gem 'rails', '~> 5.0.2'
 #gem 'pg', '~> 0.21.0'
 gem 'pg'
 #Database MYSQL
-#gem 'mysql2', '>= 0.3.18', '< 0.5' 
+#gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -71,6 +72,9 @@ gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
 #Gema para iconos font-awesome
 gem 'font-awesome-rails'
 
+# haml
+gem 'haml'
+
 #Gema para habilitar caracteristicas del login y asset
 gem 'rails_12factor', group: :production
 
@@ -92,7 +96,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
